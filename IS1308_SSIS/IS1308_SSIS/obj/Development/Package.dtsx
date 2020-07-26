@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{B4734A0E-462F-44D8-BE01-D98BB6190561}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{7F47DE48-FE43-4B23-A7E9-EA44A2422E8D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -27,13 +27,13 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[LocalHost.Ray_nau]"
+      DTS:refId="Package.ConnectionManagers[LocalHost.Ray_nau_OLTP]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{92A8A0E0-79CA-42DD-839A-CA3F75331A84}"
-      DTS:ObjectName="LocalHost.Ray_nau">
+      DTS:ObjectName="LocalHost.Ray_nau_OLTP">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=.;Initial Catalog=Ray_nau;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=.;Initial Catalog=IS1308_Ray_Nau_OLTP;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -119,8 +119,8 @@
               <connections>
                 <connection
                   refId="Package\InsectDataFlow\Insect.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.Ray_nau]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Ray_nau]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.Ray_nau_OLTP]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Ray_nau_OLTP]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -357,8 +357,8 @@
               <connections>
                 <connection
                   refId="Package\InsectDataFlow\InsectDiet.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.Ray_nau]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Ray_nau]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.Ray_nau_OLTP]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Ray_nau_OLTP]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -487,8 +487,8 @@
               <connections>
                 <connection
                   refId="Package\InsectDataFlow\InsectKind.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.Ray_nau]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Ray_nau]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.Ray_nau_OLTP]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Ray_nau_OLTP]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -617,8 +617,8 @@
               <connections>
                 <connection
                   refId="Package\InsectDataFlow\InsectSubKind.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.Ray_nau]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Ray_nau]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.Ray_nau_OLTP]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Ray_nau_OLTP]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3294,8 +3294,8 @@
               <connections>
                 <connection
                   refId="Package\TrapDataFlow\Trap.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.Ray_nau]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Ray_nau]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.Ray_nau_OLTP]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Ray_nau_OLTP]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>

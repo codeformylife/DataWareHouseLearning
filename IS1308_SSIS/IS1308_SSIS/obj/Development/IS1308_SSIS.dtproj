@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">MAYTINH</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMLd/01LKZUO2c/F7+pkqvAAAAAACAAAAAAAQZgAAAAEAACAAAADLj/AxkN2fnFdTaZfx9VbTLGCu3XSa+izeips8eWw/GwAAAAAOgAAAAAIAACAAAAA1/2N9+sQOm2eX7XqTIn1VQ6cYNGPdXR1tp2F3cr8H1JAAAADOpqcThjc6+Om8p7U3AMKFB8rt/eJrJXmeCUEZ2Cmo6WakE4Sa+T8ChzFlcnWpn8sOig8kMeTuMVwv/QuCqLumzfueakPA0ZvL0F616iSk7+wrXvSIV37A8vD13JbIZ4yIsdPHAPwlI9TN3n0ccmhejtxePTgczl+Qflb2CFbC9X2LadFDpSE/eOigGzAEL2hAAAAAGNr2+9FxpC/Y1f8D7ytxnnXKf2RmCmolsx/7h/TAmrSk58ukv+1qyMYIPaVd/MrR2twiFnrsfG6QQJOrZCwORg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMLd/01LKZUO2c/F7+pkqvAAAAAACAAAAAAAQZgAAAAEAACAAAADuZvf1LlTWNhnaGCX02K1LVSie2AafRHW4vO0YdjTFKAAAAAAOgAAAAAIAACAAAABzhEqn23vuNlSafzeExeQWO9Avk/6DSd4zArfzIIDikJAAAAD2ZbkF6+dcAJPmmRfFMdCvVc2XW7cxbnGiSpeK3+FgiM6BKuL2F1h1+xcOLlAOm0DxKCiz+ncukg0a9No3lCHhJLjRY1w2himF7WuNkLNWuq2yldF3PonF7j74DDcdTR8+jUIUb/nKhruRxoQo0thz6LXuiGOkWcASXrxKGN248sRviuXwOP/8zmUfM5DH0shAAAAAhkY33hsxxKoKPiakYS6n+OTpj6VpSMqhUWUmVi92Hbr+erHBWaHrsGEyyDgTqdIOtmvJfDnWuTVkPZIadEYhWw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">2</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{B4734A0E-462F-44D8-BE01-D98BB6190561}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{7F47DE48-FE43-4B23-A7E9-EA44A2422E8D}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -170,7 +170,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau.ConnectByProxy">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau_OLTP.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -185,7 +185,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau.ConnectionString">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau_OLTP.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -196,11 +196,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=.;Initial Catalog=Ray_nau;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=.;Initial Catalog=IS1308_Ray_Nau_OLTP;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau.ConnectUsingManagedIdentity">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau_OLTP.ConnectUsingManagedIdentity">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -215,7 +215,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau.InitialCatalog">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau_OLTP.InitialCatalog">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -226,11 +226,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Ray_nau</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">IS1308_Ray_Nau_OLTP</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau.Password">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau_OLTP.Password">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -244,7 +244,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau.RetainSameConnection">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau_OLTP.RetainSameConnection">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -259,7 +259,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau.ServerName">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau_OLTP.ServerName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -274,7 +274,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau.UserName">
+                <SSIS:Parameter SSIS:Name="CM.LocalHost.Ray_nau_OLTP.UserName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
