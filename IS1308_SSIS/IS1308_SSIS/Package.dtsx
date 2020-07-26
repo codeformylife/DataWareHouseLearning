@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{7F47DE48-FE43-4B23-A7E9-EA44A2422E8D}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{E31F6E77-69D4-406D-A6FA-E8EC74AC9425}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -51,7 +51,1158 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <pipeline
-          version="1" />
+          version="1">
+          <components>
+            <component
+              refId="Package\FarmerDataFlow\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\FarmerDataFlow\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FarmerDataFlow\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\FarmerDataFlow\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Derived Column.Outputs[Derived Column Output].Columns[EndDate]"
+                      dataType="dbTimeStamp"
+                      description="EndDate"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\FarmerDataFlow\Derived Column.Outputs[Derived Column Output].Columns[EndDate]"
+                      name="EndDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBTIMESTAMP)(@[System::StartTime])</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBTIMESTAMP)(@[System::StartTime])</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FarmerDataFlow\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\FarmerDataFlow\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FarmerDataFlow\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FarmerDataFlow\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FarmerDataFlow\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\FarmerDataFlow\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FarmerDataFlow\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\FarmerDataFlow\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Derived Column 1.Outputs[Derived Column Output].Columns[StartDate]"
+                      dataType="dbTimeStamp"
+                      description="StartDate"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\FarmerDataFlow\Derived Column 1.Outputs[Derived Column Output].Columns[StartDate]"
+                      name="StartDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_DBTIMESTAMP)(@[System::StartTime])</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_DBTIMESTAMP)(@[System::StartTime])</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FarmerDataFlow\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\FarmerDataFlow\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FarmerDataFlow\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FarmerDataFlow\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FarmerDataFlow\Farmer"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Farmer"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Farmer]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FarmerDataFlow\Farmer.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.Ray_nau_OLTP]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.Ray_nau_OLTP]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[FamerID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].ExternalColumns[FamerID]"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[FamerID]"
+                      name="FamerID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                      length="255"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[FirstName]"
+                      name="FirstName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                      length="255"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[LastName]"
+                      name="LastName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[Address]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].ExternalColumns[Address]"
+                      length="255"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[Address]"
+                      name="Address"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[PhoneNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].ExternalColumns[PhoneNumber]"
+                      length="255"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[PhoneNumber]"
+                      name="PhoneNumber"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].ExternalColumns[FamerID]"
+                      dataType="i4"
+                      name="FamerID" />
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].ExternalColumns[Address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Address" />
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].ExternalColumns[PhoneNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="PhoneNumber" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Error Output].Columns[FamerID]"
+                      dataType="i4"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Error Output].Columns[FamerID]"
+                      name="FamerID" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                      name="FirstName" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                      name="LastName" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Error Output].Columns[Address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Error Output].Columns[Address]"
+                      name="Address" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Error Output].Columns[PhoneNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Error Output].Columns[PhoneNumber]"
+                      name="PhoneNumber" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FarmerDataFlow\Insert Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Insert Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Farmer]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FarmerDataFlow\Insert Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.IS1308_Ray_Nau_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.IS1308_Ray_Nau_DW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\FarmerDataFlow\Insert Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\Insert Destination.Inputs[OLE DB Destination Input].Columns[FamerID]"
+                      cachedDataType="i4"
+                      cachedName="FamerID"
+                      externalMetadataColumnId="Package\FarmerDataFlow\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[FarmerID]"
+                      lineageId="Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[FamerID]" />
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\Insert Destination.Inputs[OLE DB Destination Input].Columns[Address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Address"
+                      externalMetadataColumnId="Package\FarmerDataFlow\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[FarmerAddress]"
+                      lineageId="Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[Address]" />
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\Insert Destination.Inputs[OLE DB Destination Input].Columns[StartDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="StartDate"
+                      externalMetadataColumnId="Package\FarmerDataFlow\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartDate]"
+                      lineageId="Package\FarmerDataFlow\Derived Column 1.Outputs[Derived Column Output].Columns[StartDate]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[FarmerKey]"
+                      dataType="i4"
+                      name="FarmerKey" />
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[FarmerID]"
+                      dataType="i4"
+                      name="FarmerID" />
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[FarmerAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="FarmerAddress" />
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[StartDate]"
+                      dataType="dbTimeStamp"
+                      name="StartDate" />
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\Insert Destination.Inputs[OLE DB Destination Input].ExternalColumns[EndDate]"
+                      dataType="dbTimeStamp"
+                      name="EndDate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FarmerDataFlow\Insert Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\FarmerDataFlow\Insert Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Insert Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FarmerDataFlow\Insert Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Insert Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FarmerDataFlow\Insert Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FarmerDataFlow\OLE DB Command"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="OLE DB Command"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE [dbo].[Farmer] SET [EndDate] = ? WHERE [FarmerID] = ? AND [EndDate] IS NULL</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FarmerDataFlow\OLE DB Command.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.IS1308_Ray_Nau_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.IS1308_Ray_Nau_DW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\FarmerDataFlow\OLE DB Command.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\OLE DB Command.Inputs[OLE DB Command Input].Columns[FamerID]"
+                      cachedDataType="i4"
+                      cachedName="FamerID"
+                      externalMetadataColumnId="Package\FarmerDataFlow\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[FamerID]" />
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\OLE DB Command.Inputs[OLE DB Command Input].Columns[EndDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="EndDate"
+                      externalMetadataColumnId="Package\FarmerDataFlow\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\FarmerDataFlow\Derived Column.Outputs[Derived Column Output].Columns[EndDate]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      dataType="dbTimeStamp"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\OLE DB Command.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      dataType="i4"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FarmerDataFlow\OLE DB Command.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\FarmerDataFlow\OLE DB Command.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FarmerDataFlow\OLE DB Command.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\FarmerDataFlow\OLE DB Command.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FarmerDataFlow\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FarmerDataFlow\OLE DB Command.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FarmerDataFlow\OLE DB Command 1"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="OLE DB Command 1"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">UPDATE [dbo].[Farmer] SET [FarmerAddress] = ? WHERE [FarmerID] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FarmerDataFlow\OLE DB Command 1.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.IS1308_Ray_Nau_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.IS1308_Ray_Nau_DW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\FarmerDataFlow\OLE DB Command 1.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[Address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Address"
+                      externalMetadataColumnId="Package\FarmerDataFlow\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[Address]" />
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\OLE DB Command 1.Inputs[OLE DB Command Input].Columns[FamerID]"
+                      cachedDataType="i4"
+                      cachedName="FamerID"
+                      externalMetadataColumnId="Package\FarmerDataFlow\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[FamerID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\OLE DB Command 1.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      dataType="i4"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FarmerDataFlow\OLE DB Command 1.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\FarmerDataFlow\OLE DB Command 1.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FarmerDataFlow\OLE DB Command 1.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\FarmerDataFlow\OLE DB Command 1.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\OLE DB Command 1.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\FarmerDataFlow\OLE DB Command 1.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\OLE DB Command 1.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\FarmerDataFlow\OLE DB Command 1.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FarmerDataFlow\Slowly Changing Dimension"
+              componentClassID="Microsoft.SCD"
+              contactInfo="Slowly Changing Dimension;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Updates a SQL Server Analysis Services data warehouse dimension. Update dimension records that are already present and  insert dimension records that aren't. For example, update the DimProduct table of the AdventureWorksDW OLAP database with data from the Products table in the AdventureWorks OLTP database."
+              name="Slowly Changing Dimension"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SELECT statement used to create a schema rowset."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT [FarmerAddress], [FarmerID],[StartDate],[EndDate] FROM [dbo].[Farmer]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the WHERE clause in the SELECT statement that selects the current row among rows with identical business keys."
+                  name="CurrentRowWhere">[StartDate] IS NOT NULL AND [EndDate] IS NULL</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether historical attribute updates are directed to the transformation output for changing attribute updates."
+                  name="UpdateChangingAttributeHistory">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the transformation fails when columns with fixed attributes contain changes."
+                  name="FailOnFixedAttributeChange">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the column name for the inferred member."
+                  name="InferredMemberIndicator"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether inferred member updates are detected."
+                  name="EnableInferredMember">true</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the transformation fails when a lookup of an existing record fails."
+                  name="FailOnLookupFailure">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies that all rows in the input are new or the transformation detects the change type."
+                  name="IncomingRowChangeType"
+                  typeConverter="IncomingRowChangeType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\FarmerDataFlow\Slowly Changing Dimension.Connections[LookupConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LocalHost.IS1308_Ray_Nau_DW]"
+                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.IS1308_Ray_Nau_DW]"
+                  description="Defines the connection to use for lookups in the dimension table"
+                  name="LookupConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
+                  name="Slowly Changing Dimension Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].Columns[Address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Address"
+                      externalMetadataColumnId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[FarmerAddress]"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[Address]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">3</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].Columns[FamerID]"
+                      cachedDataType="i4"
+                      cachedName="FamerID"
+                      externalMetadataColumnId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[FarmerID]"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[FamerID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          name="ColumnType"
+                          typeConverter="ColumnType">1</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[FarmerAddress]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      name="FarmerAddress" />
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[FarmerID]"
+                      dataType="i4"
+                      name="FarmerID" />
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[StartDate]"
+                      dataType="dbTimeStamp"
+                      name="StartDate" />
+                    <externalMetadataColumn
+                      refId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input].ExternalColumns[EndDate]"
+                      dataType="dbTimeStamp"
+                      name="EndDate" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FarmerDataFlow\Slowly Changing Dimension.Outputs[Unchanged Output]"
+                  description="Unchanged rows"
+                  exclusionGroup="1"
+                  name="Unchanged Output"
+                  synchronousInputId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FarmerDataFlow\Slowly Changing Dimension.Outputs[New Output]"
+                  description="New rows"
+                  exclusionGroup="1"
+                  name="New Output"
+                  synchronousInputId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FarmerDataFlow\Slowly Changing Dimension.Outputs[Fixed Attribute Output]"
+                  description="Rows with changes in columns tagged FixedAttribute"
+                  exclusionGroup="1"
+                  name="Fixed Attribute Output"
+                  synchronousInputId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FarmerDataFlow\Slowly Changing Dimension.Outputs[Changing Attribute Updates Output]"
+                  description="These rows contain new information for ChangingAttribute (Type 1) column changes"
+                  exclusionGroup="1"
+                  name="Changing Attribute Updates Output"
+                  synchronousInputId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FarmerDataFlow\Slowly Changing Dimension.Outputs[Historical Attribute Inserts Output]"
+                  description="HistoricalAttribute (Type 2) changes result in these new rows"
+                  exclusionGroup="2"
+                  name="Historical Attribute Inserts Output"
+                  synchronousInputId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\FarmerDataFlow\Slowly Changing Dimension.Outputs[Inferred Member Updates Output]"
+                  description="Information to update unpopulated initial dimension row"
+                  exclusionGroup="1"
+                  name="Inferred Member Updates Output"
+                  synchronousInputId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\FarmerDataFlow\Union All"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+              name="Union All"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\FarmerDataFlow\Union All.Inputs[Union All Input 1]"
+                  name="Union All Input 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\Union All.Inputs[Union All Input 1].Columns[FamerID]"
+                      cachedDataType="i4"
+                      cachedName="FamerID"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[FamerID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[FamerID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\Union All.Inputs[Union All Input 1].Columns[FirstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="FirstName"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[FirstName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[FirstName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\Union All.Inputs[Union All Input 1].Columns[LastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="LastName"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[LastName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[LastName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\Union All.Inputs[Union All Input 1].Columns[Address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Address"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[Address]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[Address]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\Union All.Inputs[Union All Input 1].Columns[PhoneNumber]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="PhoneNumber"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[PhoneNumber]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[PhoneNumber]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\FarmerDataFlow\Union All.Inputs[Union All Input 2]"
+                  hasSideEffects="true"
+                  name="Union All Input 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\Union All.Inputs[Union All Input 2].Columns[FamerID]"
+                      cachedDataType="i4"
+                      cachedName="FamerID"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[FamerID]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[FamerID]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\Union All.Inputs[Union All Input 2].Columns[FirstName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="FirstName"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[FirstName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[FirstName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\Union All.Inputs[Union All Input 2].Columns[LastName]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="LastName"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[LastName]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[LastName]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\Union All.Inputs[Union All Input 2].Columns[Address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="Address"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[Address]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[Address]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\FarmerDataFlow\Union All.Inputs[Union All Input 2].Columns[PhoneNumber]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedName="PhoneNumber"
+                      lineageId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output].Columns[PhoneNumber]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Output column lineage ID"
+                          name="OutputColumnLineageID">#{Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[PhoneNumber]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\FarmerDataFlow\Union All.Inputs[Union All Input 3]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Union All Input 3">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\FarmerDataFlow\Union All.Outputs[Union All Output 1]"
+                  name="Union All Output 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[FamerID]"
+                      dataType="i4"
+                      lineageId="Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[FamerID]"
+                      name="FamerID" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[FirstName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[FirstName]"
+                      name="FirstName" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[LastName]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[LastName]"
+                      name="LastName" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[Address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[Address]"
+                      name="Address" />
+                    <outputColumn
+                      refId="Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[PhoneNumber]"
+                      codePage="1252"
+                      dataType="str"
+                      length="255"
+                      lineageId="Package\FarmerDataFlow\Union All.Outputs[Union All Output 1].Columns[PhoneNumber]"
+                      name="PhoneNumber" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\FarmerDataFlow.Paths[Derived Column Output]"
+              endId="Package\FarmerDataFlow\OLE DB Command.Inputs[OLE DB Command Input]"
+              name="Derived Column Output"
+              startId="Package\FarmerDataFlow\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\FarmerDataFlow.Paths[Derived Column Output1]"
+              endId="Package\FarmerDataFlow\Insert Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\FarmerDataFlow\Derived Column 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\FarmerDataFlow.Paths[Historical Attribute Inserts Output]"
+              endId="Package\FarmerDataFlow\Derived Column.Inputs[Derived Column Input]"
+              name="Historical Attribute Inserts Output"
+              startId="Package\FarmerDataFlow\Slowly Changing Dimension.Outputs[Historical Attribute Inserts Output]" />
+            <path
+              refId="Package\FarmerDataFlow.Paths[Inferred Member Updates Output]"
+              endId="Package\FarmerDataFlow\OLE DB Command 1.Inputs[OLE DB Command Input]"
+              name="Inferred Member Updates Output"
+              startId="Package\FarmerDataFlow\Slowly Changing Dimension.Outputs[Inferred Member Updates Output]" />
+            <path
+              refId="Package\FarmerDataFlow.Paths[New Output]"
+              endId="Package\FarmerDataFlow\Union All.Inputs[Union All Input 1]"
+              name="New Output"
+              startId="Package\FarmerDataFlow\Slowly Changing Dimension.Outputs[New Output]" />
+            <path
+              refId="Package\FarmerDataFlow.Paths[OLE DB Command Output]"
+              endId="Package\FarmerDataFlow\Union All.Inputs[Union All Input 2]"
+              name="OLE DB Command Output"
+              startId="Package\FarmerDataFlow\OLE DB Command.Outputs[OLE DB Command Output]" />
+            <path
+              refId="Package\FarmerDataFlow.Paths[OLE DB Source Output]"
+              endId="Package\FarmerDataFlow\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
+              name="OLE DB Source Output"
+              startId="Package\FarmerDataFlow\Farmer.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\FarmerDataFlow.Paths[Union All Output 1]"
+              endId="Package\FarmerDataFlow\Derived Column 1.Inputs[Derived Column Input]"
+              name="Union All Output 1"
+              startId="Package\FarmerDataFlow\Union All.Outputs[Union All Output 1]" />
+          </paths>
+        </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -2978,7 +4129,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{DD8D4178-7022-4E89-8492-C5FC8C123708}"
-          SQLTask:SqlStatementSource="Delete from Facts&#xA;Delete from Insect&#xA;Delete from Time&#xA;Delete from Trap&#xA;Delete from Farmer" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="Delete from Facts&#xA;Delete from Insect&#xA;Delete from Time&#xA;Delete from Trap" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -3437,28 +4588,28 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="156,42"
+          Id="Package\FarmerDataFlow"
+          TopLeft="742,160.5" />
+        <NodeLayout
           Size="151,42"
           Id="Package\InsectDataFlow"
-          TopLeft="5.5,107.5" />
+          TopLeft="54.5,149.5" />
         <NodeLayout
           Size="205,42"
           Id="Package\Remove All Data From DW"
-          TopLeft="403.5,5.49999999999989" />
-        <NodeLayout
-          Size="156,42"
-          Id="Package\FarmerDataFlow"
-          TopLeft="693,118.5" />
-        <NodeLayout
-          Size="144,42"
-          Id="Package\TrapDataFlow"
-          TopLeft="280,111.5" />
+          TopLeft="452.5,47.4999999999999" />
         <NodeLayout
           Size="146,42"
           Id="Package\TimeDataFlow"
-          TopLeft="486,114.5" />
+          TopLeft="535,156.5" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\TrapDataFlow"
+          TopLeft="329,153.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="446.9,47.4999999999999">
+          TopLeft="495.9,89.4999999999999">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -3492,30 +4643,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="565.1,47.4999999999999">
+          TopLeft="614.1,89.4999999999999">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="205.9,71"
+              EndConnector="205.9,71.0000000000001"
               Start="0,0"
-              End="205.9,63.5">
+              End="205.9,63.5000000000001">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,17.1199451679232" />
+                    End="0,17.1199451679233" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,17.1199451679232"
-                    Point2="0,21.1199451679232"
-                    Point3="4,21.1199451679232" />
+                    Point1="0,17.1199451679233"
+                    Point2="0,21.1199451679233"
+                    Point3="4,21.1199451679233" />
                   <mssgle:LineSegment
-                    End="201.9,21.1199451679232" />
+                    End="201.9,21.1199451679233" />
                   <mssgle:CubicBezierSegment
-                    Point1="201.9,21.1199451679232"
-                    Point2="205.9,21.1199451679232"
-                    Point3="205.9,25.1199451679232" />
+                    Point1="201.9,21.1199451679233"
+                    Point2="205.9,21.1199451679233"
+                    Point3="205.9,25.1199451679233" />
                   <mssgle:LineSegment
-                    End="205.9,63.5" />
+                    End="205.9,63.5000000000001" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3526,30 +4677,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="486.3,47.4999999999999">
+          TopLeft="535.3,89.4999999999999">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-134.3,64"
+              EndConnector="-134.3,64.0000000000001"
               Start="0,0"
-              End="-134.3,56.5">
+              End="-134.3,56.5000000000001">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,24.5979492714517" />
+                    End="0,24.5979492714518" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,24.5979492714517"
-                    Point2="0,28.5979492714517"
-                    Point3="-4,28.5979492714517" />
+                    Point1="0,24.5979492714518"
+                    Point2="0,28.5979492714518"
+                    Point3="-4,28.5979492714518" />
                   <mssgle:LineSegment
-                    End="-130.3,28.5979492714517" />
+                    End="-130.3,28.5979492714518" />
                   <mssgle:CubicBezierSegment
-                    Point1="-130.3,28.5979492714517"
-                    Point2="-134.3,28.5979492714517"
-                    Point3="-134.3,32.5979492714517" />
+                    Point1="-130.3,28.5979492714518"
+                    Point2="-134.3,28.5979492714518"
+                    Point3="-134.3,32.5979492714518" />
                   <mssgle:LineSegment
-                    End="-134.3,56.5" />
+                    End="-134.3,56.5000000000001" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3560,13 +4711,13 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="525.7,47.4999999999999">
+          TopLeft="574.7,89.4999999999999">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="33.3,67"
+              EndConnector="33.3,67.0000000000001"
               Start="0,0"
-              End="33.3,59.5">
+              End="33.3,59.5000000000001">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -3583,7 +4734,7 @@
                     Point2="33.3,29.938478143551"
                     Point3="33.3,33.938478143551" />
                   <mssgle:LineSegment
-                    End="33.3,59.5" />
+                    End="33.3,59.5000000000001" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3596,68 +4747,362 @@
     </LayoutInfo>
   </Package>
   <TaskHost
+    design-time-name="Package\FarmerDataFlow">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="112,42"
+          Id="Package\FarmerDataFlow\Farmer"
+          TopLeft="176.5,5.5" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\FarmerDataFlow\Slowly Changing Dimension"
+          TopLeft="128,107.5" />
+        <EdgeLayout
+          Id="Package\FarmerDataFlow.Paths[OLE DB Source Output]"
+          TopLeft="232.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="154,42"
+          Id="Package\FarmerDataFlow\Derived Column"
+          TopLeft="17.5000000000001,209.5" />
+        <EdgeLayout
+          Id="Package\FarmerDataFlow.Paths[Historical Attribute Inserts Output]"
+          TopLeft="182.25,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-87.75,60"
+              Start="0,0"
+              End="-87.75,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.503937007874" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.503937007874"
+                    Point2="0,20.503937007874"
+                    Point3="-4,20.503937007874" />
+                  <mssgle:LineSegment
+                    End="-83.75,20.503937007874" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-83.75,20.503937007874"
+                    Point2="-87.75,20.503937007874"
+                    Point3="-87.75,24.503937007874" />
+                  <mssgle:LineSegment
+                    End="-87.75,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-118.93138671875,25.503937007874,150.1127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="166,42"
+          Id="Package\FarmerDataFlow\OLE DB Command"
+          TopLeft="5.50000000000006,311.5" />
+        <EdgeLayout
+          Id="Package\FarmerDataFlow.Paths[Derived Column Output]"
+          TopLeft="91.5000000000001,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="121,42"
+          Id="Package\FarmerDataFlow\Union All"
+          TopLeft="172,413.5" />
+        <EdgeLayout
+          Id="Package\FarmerDataFlow.Paths[New Output]"
+          TopLeft="232.5,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="18.8333333333334,264"
+              Start="0,0"
+              End="18.8333333333334,256.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,152.332789559543" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,152.332789559543"
+                    Point2="0,156.332789559543"
+                    Point3="4,156.332789559543" />
+                  <mssgle:LineSegment
+                    End="14.8333333333334,156.332789559543" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14.8333333333334,156.332789559543"
+                    Point2="18.8333333333334,156.332789559543"
+                    Point3="18.8333333333334,160.332789559543" />
+                  <mssgle:LineSegment
+                    End="18.8333333333334,256.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-17.6747200520833,161.332789559543,54.1827734375,11.43359375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FarmerDataFlow.Paths[OLE DB Command Output]"
+          TopLeft="88.5000000000001,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="125.166666666667,60"
+              Start="0,0"
+              End="125.166666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5301794453507" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5301794453507"
+                    Point2="0,35.5301794453507"
+                    Point3="4,35.5301794453507" />
+                  <mssgle:LineSegment
+                    End="121.166666666667,35.5301794453507" />
+                  <mssgle:CubicBezierSegment
+                    Point1="121.166666666667,35.5301794453507"
+                    Point2="125.166666666667,35.5301794453507"
+                    Point3="125.166666666667,39.5301794453507" />
+                  <mssgle:LineSegment
+                    End="125.166666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\FarmerDataFlow\Derived Column 1"
+          TopLeft="151,515.5" />
+        <EdgeLayout
+          Id="Package\FarmerDataFlow.Paths[Union All Output 1]"
+          TopLeft="232.5,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="163,42"
+          Id="Package\FarmerDataFlow\Insert Destination"
+          TopLeft="151,617.5" />
+        <EdgeLayout
+          Id="Package\FarmerDataFlow.Paths[Derived Column Output1]"
+          TopLeft="232.5,557.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="175,42"
+          Id="Package\FarmerDataFlow\OLE DB Command 1"
+          TopLeft="294,209.5" />
+        <EdgeLayout
+          Id="Package\FarmerDataFlow.Paths[Inferred Member Updates Output]"
+          TopLeft="282.75,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="98.75,60"
+              Start="0,0"
+              End="98.75,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.503937007874" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.503937007874"
+                    Point2="0,20.503937007874"
+                    Point3="4,20.503937007874" />
+                  <mssgle:LineSegment
+                    End="94.75,20.503937007874" />
+                  <mssgle:CubicBezierSegment
+                    Point1="94.75,20.503937007874"
+                    Point2="98.75,20.503937007874"
+                    Point3="98.75,24.503937007874" />
+                  <mssgle:LineSegment
+                    End="98.75,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-25.02798828125,25.503937007874,148.8059765625,11.658203125"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
     design-time-name="Package\InsectDataFlow">
     <LayoutInfo>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="146,42"
-          Id="Package\InsectDataFlow\InsectSubKind"
-          TopLeft="5.50000000000009,413.5" />
-        <NodeLayout
-          Size="128,42"
-          Id="Package\InsectDataFlow\InsectKind"
-          TopLeft="27.5000000000001,209.5" />
-        <NodeLayout
-          Size="127,42"
-          Id="Package\InsectDataFlow\InsectDiet"
-          TopLeft="40,5.5" />
-        <NodeLayout
-          Size="108,42"
-          Id="Package\InsectDataFlow\Insect"
-          TopLeft="227.5,5.5" />
+          Size="171,42"
+          Id="Package\InsectDataFlow\OLE DB Destination"
+          TopLeft="203,694" />
         <NodeLayout
           Size="98,42"
           Id="Package\InsectDataFlow\Sort"
           TopLeft="69.5000000000001,515.5" />
         <NodeLayout
-          Size="98,42"
-          Id="Package\InsectDataFlow\Sort 1"
-          TopLeft="69.5000000000001,311.5" />
+          Size="139,42"
+          Id="Package\InsectDataFlow\Merge Join 2"
+          TopLeft="212,617.5" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\InsectDataFlow\Merge Join"
+          TopLeft="216.5,209.5" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\InsectDataFlow\Merge Join 1"
+          TopLeft="212,413.5" />
         <NodeLayout
           Size="98,42"
           Id="Package\InsectDataFlow\Sort 2"
           TopLeft="73.5000000000001,107.5" />
         <NodeLayout
+          Size="128,42"
+          Id="Package\InsectDataFlow\InsectKind"
+          TopLeft="27.5000000000001,209.5" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\InsectDataFlow\Sort 5"
+          TopLeft="228,515.5" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\InsectDataFlow\Sort 4"
+          TopLeft="228,311.5" />
+        <NodeLayout
+          Size="98,42"
+          Id="Package\InsectDataFlow\Sort 1"
+          TopLeft="69.5000000000001,311.5" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\InsectDataFlow\InsectSubKind"
+          TopLeft="5.50000000000009,413.5" />
+        <NodeLayout
+          Size="127,42"
+          Id="Package\InsectDataFlow\InsectDiet"
+          TopLeft="40,5.5" />
+        <NodeLayout
           Size="98,42"
           Id="Package\InsectDataFlow\Sort 3"
           TopLeft="232.5,107.5" />
+        <NodeLayout
+          Size="108,42"
+          Id="Package\InsectDataFlow\Insect"
+          TopLeft="227.5,5.5" />
         <EdgeLayout
-          Id="Package\InsectDataFlow.Paths[OLE DB Source Output]"
-          TopLeft="78.5000000000001,455.5">
+          Id="Package\InsectDataFlow.Paths[Sort Output5]"
+          TopLeft="118.5,557.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="40,60"
+              EndConnector="141.166666666667,60"
               Start="0,0"
-              End="40,52.5">
+              End="141.166666666667,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26" />
+                    End="0,31.5903271692745" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="4,30" />
+                    Point1="0,31.5903271692745"
+                    Point2="0,35.5903271692745"
+                    Point3="4,35.5903271692745" />
                   <mssgle:LineSegment
-                    End="36,30" />
+                    End="137.166666666667,35.5903271692745" />
                   <mssgle:CubicBezierSegment
-                    Point1="36,30"
-                    Point2="40,30"
-                    Point3="40,34" />
+                    Point1="137.166666666667,35.5903271692745"
+                    Point2="141.166666666667,35.5903271692745"
+                    Point3="141.166666666667,39.5903271692745" />
                   <mssgle:LineSegment
-                    End="40,52.5" />
+                    End="141.166666666667,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3667,31 +5112,189 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\InsectDataFlow.Paths[OLE DB Source Output1]"
-          TopLeft="91.5000000000001,251.5">
+          Id="Package\InsectDataFlow.Paths[Sort Output4]"
+          TopLeft="281.5,557.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="27,60"
+              EndConnector="21.8333333333333,60"
               Start="0,0"
-              End="27,52.5">
+              End="21.8333333333333,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26" />
+                    End="0,31.5903271692745" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="4,30" />
+                    Point1="0,31.5903271692745"
+                    Point2="0,35.5903271692745"
+                    Point3="4,35.5903271692745" />
                   <mssgle:LineSegment
-                    End="23,30" />
+                    End="17.8333333333333,35.5903271692745" />
                   <mssgle:CubicBezierSegment
-                    Point1="23,30"
-                    Point2="27,30"
-                    Point3="27,34" />
+                    Point1="17.8333333333333,35.5903271692745"
+                    Point2="21.8333333333333,35.5903271692745"
+                    Point3="21.8333333333333,39.5903271692745" />
                   <mssgle:LineSegment
-                    End="27,52.5" />
+                    End="21.8333333333333,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\InsectDataFlow.Paths[Sort Output3]"
+          TopLeft="281.5,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="21.8333333333333,60"
+              Start="0,0"
+              End="21.8333333333333,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5903271692745" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5903271692745"
+                    Point2="0,35.5903271692745"
+                    Point3="4,35.5903271692745" />
+                  <mssgle:LineSegment
+                    End="17.8333333333333,35.5903271692745" />
+                  <mssgle:CubicBezierSegment
+                    Point1="17.8333333333333,35.5903271692745"
+                    Point2="21.8333333333333,35.5903271692745"
+                    Point3="21.8333333333333,39.5903271692745" />
+                  <mssgle:LineSegment
+                    End="21.8333333333333,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\InsectDataFlow.Paths[Sort Output2]"
+          TopLeft="118.5,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="141.166666666667,60"
+              Start="0,0"
+              End="141.166666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5903271692745" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5903271692745"
+                    Point2="0,35.5903271692745"
+                    Point3="4,35.5903271692745" />
+                  <mssgle:LineSegment
+                    End="137.166666666667,35.5903271692745" />
+                  <mssgle:CubicBezierSegment
+                    Point1="137.166666666667,35.5903271692745"
+                    Point2="141.166666666667,35.5903271692745"
+                    Point3="141.166666666667,39.5903271692745" />
+                  <mssgle:LineSegment
+                    End="141.166666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\InsectDataFlow.Paths[Sort Output1]"
+          TopLeft="281.5,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="20.3333333333333,60"
+              Start="0,0"
+              End="20.3333333333333,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5623100303951" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5623100303951"
+                    Point2="0,35.5623100303951"
+                    Point3="4,35.5623100303951" />
+                  <mssgle:LineSegment
+                    End="16.3333333333333,35.5623100303951" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.3333333333333,35.5623100303951"
+                    Point2="20.3333333333333,35.5623100303951"
+                    Point3="20.3333333333333,39.5623100303951" />
+                  <mssgle:LineSegment
+                    End="20.3333333333333,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\InsectDataFlow.Paths[Sort Output]"
+          TopLeft="122.5,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="138.666666666667,60"
+              Start="0,0"
+              End="138.666666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5623100303951" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5623100303951"
+                    Point2="0,35.5623100303951"
+                    Point3="4,35.5623100303951" />
+                  <mssgle:LineSegment
+                    End="134.666666666667,35.5623100303951" />
+                  <mssgle:CubicBezierSegment
+                    Point1="134.666666666667,35.5623100303951"
+                    Point2="138.666666666667,35.5623100303951"
+                    Point3="138.666666666667,39.5623100303951" />
+                  <mssgle:LineSegment
+                    End="138.666666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\InsectDataFlow.Paths[OLE DB Source Output3]"
+          TopLeft="281.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3735,57 +5338,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\InsectDataFlow.Paths[OLE DB Source Output3]"
-          TopLeft="281.5,47.5">
+          Id="Package\InsectDataFlow.Paths[OLE DB Source Output1]"
+          TopLeft="91.5000000000001,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="27,60"
               Start="0,0"
-              End="0,52.5">
+              End="27,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="130,42"
-          Id="Package\InsectDataFlow\Merge Join"
-          TopLeft="216.5,209.5" />
-        <EdgeLayout
-          Id="Package\InsectDataFlow.Paths[Sort Output]"
-          TopLeft="122.5,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="138.666666666667,60"
-              Start="0,0"
-              End="138.666666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5623100303951" />
+                    End="0,26" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,31.5623100303951"
-                    Point2="0,35.5623100303951"
-                    Point3="4,35.5623100303951" />
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
                   <mssgle:LineSegment
-                    End="134.666666666667,35.5623100303951" />
+                    End="23,30" />
                   <mssgle:CubicBezierSegment
-                    Point1="134.666666666667,35.5623100303951"
-                    Point2="138.666666666667,35.5623100303951"
-                    Point3="138.666666666667,39.5623100303951" />
+                    Point1="23,30"
+                    Point2="27,30"
+                    Point3="27,34" />
                   <mssgle:LineSegment
-                    End="138.666666666667,52.5" />
+                    End="27,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3795,31 +5372,31 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\InsectDataFlow.Paths[Sort Output1]"
-          TopLeft="281.5,149.5">
+          Id="Package\InsectDataFlow.Paths[OLE DB Source Output]"
+          TopLeft="78.5000000000001,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="20.3333333333333,60"
+              EndConnector="40,60"
               Start="0,0"
-              End="20.3333333333333,52.5">
+              End="40,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.5623100303951" />
+                    End="0,26" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,31.5623100303951"
-                    Point2="0,35.5623100303951"
-                    Point3="4,35.5623100303951" />
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
                   <mssgle:LineSegment
-                    End="16.3333333333333,35.5623100303951" />
+                    End="36,30" />
                   <mssgle:CubicBezierSegment
-                    Point1="16.3333333333333,35.5623100303951"
-                    Point2="20.3333333333333,35.5623100303951"
-                    Point3="20.3333333333333,39.5623100303951" />
+                    Point1="36,30"
+                    Point2="40,30"
+                    Point3="40,34" />
                   <mssgle:LineSegment
-                    End="20.3333333333333,52.5" />
+                    End="40,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3828,206 +5405,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="107,42"
-          Id="Package\InsectDataFlow\Sort 4"
-          TopLeft="228,311.5" />
-        <EdgeLayout
-          Id="Package\InsectDataFlow.Paths[Merge Join Output]"
-          TopLeft="281.5,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="139,42"
-          Id="Package\InsectDataFlow\Merge Join 1"
-          TopLeft="212,413.5" />
-        <EdgeLayout
-          Id="Package\InsectDataFlow.Paths[Sort Output2]"
-          TopLeft="118.5,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="141.166666666667,60"
-              Start="0,0"
-              End="141.166666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5903271692745" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5903271692745"
-                    Point2="0,35.5903271692745"
-                    Point3="4,35.5903271692745" />
-                  <mssgle:LineSegment
-                    End="137.166666666667,35.5903271692745" />
-                  <mssgle:CubicBezierSegment
-                    Point1="137.166666666667,35.5903271692745"
-                    Point2="141.166666666667,35.5903271692745"
-                    Point3="141.166666666667,39.5903271692745" />
-                  <mssgle:LineSegment
-                    End="141.166666666667,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\InsectDataFlow.Paths[Sort Output3]"
-          TopLeft="281.5,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="21.8333333333333,60"
-              Start="0,0"
-              End="21.8333333333333,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5903271692745" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5903271692745"
-                    Point2="0,35.5903271692745"
-                    Point3="4,35.5903271692745" />
-                  <mssgle:LineSegment
-                    End="17.8333333333333,35.5903271692745" />
-                  <mssgle:CubicBezierSegment
-                    Point1="17.8333333333333,35.5903271692745"
-                    Point2="21.8333333333333,35.5903271692745"
-                    Point3="21.8333333333333,39.5903271692745" />
-                  <mssgle:LineSegment
-                    End="21.8333333333333,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="107,42"
-          Id="Package\InsectDataFlow\Sort 5"
-          TopLeft="228,515.5" />
-        <EdgeLayout
-          Id="Package\InsectDataFlow.Paths[Merge Join Output1]"
-          TopLeft="281.5,455.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="139,42"
-          Id="Package\InsectDataFlow\Merge Join 2"
-          TopLeft="212,617.5" />
-        <EdgeLayout
-          Id="Package\InsectDataFlow.Paths[Sort Output4]"
-          TopLeft="281.5,557.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="21.8333333333333,60"
-              Start="0,0"
-              End="21.8333333333333,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5903271692745" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5903271692745"
-                    Point2="0,35.5903271692745"
-                    Point3="4,35.5903271692745" />
-                  <mssgle:LineSegment
-                    End="17.8333333333333,35.5903271692745" />
-                  <mssgle:CubicBezierSegment
-                    Point1="17.8333333333333,35.5903271692745"
-                    Point2="21.8333333333333,35.5903271692745"
-                    Point3="21.8333333333333,39.5903271692745" />
-                  <mssgle:LineSegment
-                    End="21.8333333333333,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\InsectDataFlow.Paths[Sort Output5]"
-          TopLeft="118.5,557.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="141.166666666667,60"
-              Start="0,0"
-              End="141.166666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5903271692745" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5903271692745"
-                    Point2="0,35.5903271692745"
-                    Point3="4,35.5903271692745" />
-                  <mssgle:LineSegment
-                    End="137.166666666667,35.5903271692745" />
-                  <mssgle:CubicBezierSegment
-                    Point1="137.166666666667,35.5903271692745"
-                    Point2="141.166666666667,35.5903271692745"
-                    Point3="141.166666666667,39.5903271692745" />
-                  <mssgle:LineSegment
-                    End="141.166666666667,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\InsectDataFlow\OLE DB Destination"
-          TopLeft="203,694" />
         <EdgeLayout
           Id="Package\InsectDataFlow.Paths[Merge Join Output2]"
           TopLeft="285,659.5">
@@ -4050,40 +5427,20 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\TrapDataFlow">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="101,42"
-          Id="Package\TrapDataFlow\Trap"
-          TopLeft="402,228" />
-        <NodeLayout
-          Size="98,42"
-          Id="Package\TrapDataFlow\Sort"
-          TopLeft="402,316" />
-        <NodeLayout
-          Size="171,42"
-          Id="Package\TrapDataFlow\OLE DB Destination"
-          TopLeft="363,401" />
         <EdgeLayout
-          Id="Package\TrapDataFlow.Paths[OLE DB Source Output]"
-          TopLeft="451.75,270">
+          Id="Package\InsectDataFlow.Paths[Merge Join Output1]"
+          TopLeft="281.5,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,46"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,38.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,38.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4093,19 +5450,19 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\TrapDataFlow.Paths[Sort Output]"
-          TopLeft="449.75,358">
+          Id="Package\InsectDataFlow.Paths[Merge Join Output]"
+          TopLeft="281.5,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,43"
+              EndConnector="0,60"
               Start="0,0"
-              End="0,35.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,35.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4118,7 +5475,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\InsectDataFlow\InsectSubKind">
+    design-time-name="Package\InsectDataFlow\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4132,6 +5489,19 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\InsectDataFlow\InsectKind">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\InsectDataFlow\InsectSubKind">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -4169,19 +5539,74 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\InsectDataFlow\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\TrapDataFlow">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="101,42"
+          Id="Package\TrapDataFlow\Trap"
+          TopLeft="402,228" />
+        <NodeLayout
+          Size="98,42"
+          Id="Package\TrapDataFlow\Sort"
+          TopLeft="402,316" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\TrapDataFlow\OLE DB Destination"
+          TopLeft="363,401" />
+        <EdgeLayout
+          Id="Package\TrapDataFlow.Paths[Sort Output]"
+          TopLeft="449.75,358">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43"
+              Start="0,0"
+              End="0,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\TrapDataFlow.Paths[OLE DB Source Output]"
+          TopLeft="451.75,270">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46"
+              Start="0,0"
+              End="0,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\TrapDataFlow\Trap">
     <Properties>
@@ -4205,6 +5630,66 @@
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FarmerDataFlow\Farmer">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FarmerDataFlow\Slowly Changing Dimension">
+    <Properties>
+      <Property>
+        <Name>SCDMetadata</Name>
+        <Value
+          type="q2:string">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SCDWizardMetadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionID&gt;{DD8D4178-7022-4E89-8492-C5FC8C123708}&lt;/ConnectionID&gt;
+  &lt;TableName&gt;[dbo].[Farmer]&lt;/TableName&gt;
+  &lt;InputToColumnsCollection&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Farmer.Outputs[OLE DB Source Output].Columns[Address]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;FarmerAddress&lt;/ColumnName&gt;
+      &lt;KeyType&gt;None&lt;/KeyType&gt;
+      &lt;ChangeType&gt;HistoricalAttribute&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+    &lt;InputColumnToDBColumn&gt;
+      &lt;IdentificationString&gt;Farmer.Outputs[OLE DB Source Output].Columns[FamerID]&lt;/IdentificationString&gt;
+      &lt;ColumnName&gt;FarmerID&lt;/ColumnName&gt;
+      &lt;KeyType&gt;BusinessKey&lt;/KeyType&gt;
+      &lt;ChangeType&gt;None&lt;/ChangeType&gt;
+    &lt;/InputColumnToDBColumn&gt;
+  &lt;/InputToColumnsCollection&gt;
+  &lt;GeneratedComponentsIdentificationStrings&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Derived Column&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Union All&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Derived Column 1&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;Insert Destination&lt;/anyType&gt;
+    &lt;anyType xsi:type="xsd:string"&gt;OLE DB Command 1&lt;/anyType&gt;
+  &lt;/GeneratedComponentsIdentificationStrings&gt;
+  &lt;FailFixedAttribute&gt;false&lt;/FailFixedAttribute&gt;
+  &lt;FailChangeAttribute&gt;false&lt;/FailChangeAttribute&gt;
+  &lt;UseStartEndDate&gt;true&lt;/UseStartEndDate&gt;
+  &lt;CurrentIndicatorColumn /&gt;
+  &lt;InferredIndicatorColumn /&gt;
+  &lt;ValueCurrent /&gt;
+  &lt;ValueExpired /&gt;
+  &lt;StartDateColumn&gt;StartDate&lt;/StartDateColumn&gt;
+  &lt;EndDateColumn&gt;EndDate&lt;/EndDateColumn&gt;
+  &lt;DateVariable&gt;System::StartTime&lt;/DateVariable&gt;
+  &lt;EnableInferredSupport&gt;true&lt;/EnableInferredSupport&gt;
+&lt;/SCDWizardMetadata&gt;</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
