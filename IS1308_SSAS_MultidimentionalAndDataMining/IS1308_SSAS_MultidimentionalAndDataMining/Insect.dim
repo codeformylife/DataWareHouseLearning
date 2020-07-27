@@ -1,0 +1,282 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5f707446-4f0d-4b02-861d-6d0c10982b90" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Insect</ID>
+  <Name>Insect</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3666" scrolltop="-6125" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="17092" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Insect" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4842" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000ea120000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Insect" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3666</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-6125</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="88efd341-fd8d-4bbc-913a-01c49c1cb904">
+    <DataSourceViewID>IS1308 Ray Nau DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="670a5893-0da8-4287-813c-6262c7913806">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="4fbe769a-87a9-4178-8112-3c8789970539">
+      <ID>Insect Key</ID>
+      <Name>Insect Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="95ba4aa9-c5ec-4993-acf2-a55d3239fb1b">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59b2c7b0-2478-4eab-98f0-2333aadef70c">
+            <TableID>dbo_Insect</TableID>
+            <ColumnID>InsectKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e186f120-c25f-4d05-a8d7-a370e99d1087">
+          <AttributeID>Name</AttributeID>
+          <Name>Name_</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="69a2c604-4b9c-4ffd-9e25-46e6013a7aa0">
+          <AttributeID>Max Size</AttributeID>
+          <Name>Max Size</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5add9ab8-b4f7-4574-b7fd-d0763c802247">
+          <AttributeID>Min Size</AttributeID>
+          <Name>Min Size</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="834c6a73-22eb-4f96-8d1a-02080f8622ff">
+          <AttributeID>Sub Kind</AttributeID>
+          <Name>Sub Kind</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2121e832-7191-4fdf-92f9-3128162e1346">
+          <AttributeID>Diet</AttributeID>
+          <Name>Diet</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f96bd1ff-31f6-468b-bb96-70dfb9640ef0">
+          <AttributeID>Kind</AttributeID>
+          <Name>Kind</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7ef4ed50-7a14-4f6e-a959-cee7268211fa">
+          <AttributeID>Type</AttributeID>
+          <Name>Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8528ea2c-6371-4a21-a26b-5b1118fb236d">
+      <ID>Name</ID>
+      <Name>Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c477d912-8eb7-44b3-bb32-11519d0c41b6">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3e1f2574-eba5-46ea-84bd-8fc81ceec822">
+            <TableID>dbo_Insect</TableID>
+            <ColumnID>Name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6ac42409-0b67-465f-a94d-342f20e4b20b">
+      <ID>Max Size</ID>
+      <Name>Max Size</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0f344c62-df56-441d-841e-9595c180c380">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b5102fc1-8b8c-4e9d-a52d-f0e4fb094eb7">
+            <TableID>dbo_Insect</TableID>
+            <ColumnID>MaxSize</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="288cc1f9-7b1e-4485-b829-d6aed902b7bc">
+      <ID>Min Size</ID>
+      <Name>Min Size</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d5c58b58-3c60-4e34-87cb-eaf6fe6ccd29">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6ee72ce9-09d6-4b2e-a78f-0a7488cfe3cc">
+            <TableID>dbo_Insect</TableID>
+            <ColumnID>MinSize</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2fbcd5e8-690e-40ba-9b5f-55e3978e959c">
+      <ID>Sub Kind</ID>
+      <Name>Sub Kind</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="959fc1b7-5fb7-400d-84a8-b39b5e7dfedc">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fce7ad6b-a9c4-4e1e-87c0-106177b22b6e">
+            <TableID>dbo_Insect</TableID>
+            <ColumnID>SubKind</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8f86035e-65f9-4e69-9052-23a9875f4635">
+      <ID>Diet</ID>
+      <Name>Diet</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="71100675-9b7d-487a-ac8f-f60401924128">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="02f2cc7b-5888-4b0c-817d-8fe2cfc7e64f">
+            <TableID>dbo_Insect</TableID>
+            <ColumnID>Diet</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="41be21c5-7db6-488a-b3c0-d858c2dd0b9a">
+      <ID>Kind</ID>
+      <Name>Kind</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9c22a947-c5f3-42a4-83f9-48876912f5cf">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="59eebfdd-0699-42e4-bbdf-51b0c958f642">
+            <TableID>dbo_Insect</TableID>
+            <ColumnID>Kind</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2540ac80-7287-4a03-a805-f467bd387cae">
+      <ID>Type</ID>
+      <Name>Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0cc6fafc-4de6-485f-937b-16ce3917a7e7">
+          <DataType>Boolean</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b4ce5d51-4494-4c6d-9c57-ef9b8f299f61">
+            <TableID>dbo_Insect</TableID>
+            <ColumnID>Type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="3345b17f-006b-4634-bc9a-67e25c7c26e5">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="5bd43b69-0c6d-455c-990a-c7c23a74f349">
+          <ID>Type</ID>
+          <Name>Type</Name>
+          <SourceAttributeID>Type</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c75aac79-c0cc-4383-b856-9cdb9081cec8">
+          <ID>Max Size</ID>
+          <Name>Max Size</Name>
+          <SourceAttributeID>Max Size</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f0e586ab-7a54-4df5-9461-7bcfbe6553df">
+          <ID>Min Size</ID>
+          <Name>Min Size</Name>
+          <SourceAttributeID>Min Size</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="3fc12624-8dac-4f93-9b13-e1e52abb5de5">
+          <ID>Sub Kind</ID>
+          <Name>Sub Kind</Name>
+          <SourceAttributeID>Sub Kind</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="3b55b30f-748f-4b87-aeaa-6898dbbd0850">
+          <ID>Kind</ID>
+          <Name>Kind</Name>
+          <SourceAttributeID>Kind</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="85adb8d8-5c14-4668-bd24-01d7f90be0d1">
+          <ID>Diet</ID>
+          <Name>Diet</Name>
+          <SourceAttributeID>Diet</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="d800b505-9101-4305-bcdb-88f440d454db">
+          <ID>Name</ID>
+          <Name>Name</Name>
+          <SourceAttributeID>Name</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

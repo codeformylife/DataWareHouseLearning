@@ -1,0 +1,89 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>IS1308_SSAS_MultidimentionalAndDataMining</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>kJevC9TgO4floiEQf5Ymh9Og3b4=7/28/2020 12:53:04 AM7/28/2020 12:53:04 AM</TimeStamp>
+        <ID>
+          <String>IS1308 Ray Nau DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>wPAO1fGKKv1wmVVXf8IjZhqdsH8=7/28/2020 12:59:17 AM7/28/2020 12:54:58 AM</TimeStamp>
+        <ID>
+          <String>IS1308 Ray Nau DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+6CBh+aP9BZRI/f+avNvW0M7qQ4=7/28/2020 1:05:37 AM7/28/2020 12:59:16 AM</TimeStamp>
+        <ID>
+          <String>Farmer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+KpLojiIZycGysxBFxBtyVf6PdM=7/28/2020 1:05:37 AM7/28/2020 12:59:16 AM</TimeStamp>
+        <ID>
+          <String>Trap</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>7zDSlSfWi8NYqm7vW9fjSVlJv4Y=7/28/2020 1:05:37 AM7/28/2020 12:59:16 AM</TimeStamp>
+        <ID>
+          <String>Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>C7zdUiHkJdSd2JdNQ2kjnnPmdgA=7/28/2020 1:05:37 AM7/28/2020 12:59:16 AM</TimeStamp>
+        <ID>
+          <String>Insect</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>W421RsRI35R6Jdn7tUQWsY7H0qg=7/28/2020 12:59:17 AM7/28/2020 12:59:16 AM</TimeStamp>
+        <ID>
+          <String>Facts</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>CNS6RXVzIZfXqVDTsFzedOAmvjo=7/28/2020 1:05:37 AM7/28/2020 12:59:16 AMfzYOKIZr0u5orw6h/oMAV2WatJY=7/28/2020 12:59:17 AM7/28/2020 12:59:16 AM</TimeStamp>
+        <ID>
+          <String>IS1308 Ray Nau DW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>zVy/y3HG3V4UL2tKqAZYBE7gwQQ=7/28/2020 12:46:35 AM7/28/2020 12:46:35 AM</TimeStamp>
+      <ID>
+        <String>IS1308_SSAS_MultidimentionalAndDataMining</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>false</ProcessingComplete>
+  <LastDeployed>2020-07-27T20:21:09.9Z</LastDeployed>
+</DeploymentSnapshot>
