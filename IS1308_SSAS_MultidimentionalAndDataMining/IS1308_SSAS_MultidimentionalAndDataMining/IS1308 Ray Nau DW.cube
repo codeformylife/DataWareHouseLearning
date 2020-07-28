@@ -1,4 +1,4 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8f63b7c8-8112-4cd5-b72c-a12c27420b84" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a879fbf0-c05f-4f86-82e2-f987115e0ccd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>IS1308 Ray Nau DW</ID>
   <Name>IS1308 Ray Nau DW</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -189,149 +189,152 @@
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
   <Dimensions>
-    <Dimension dwd:design-time-name="e69e539f-2190-4728-881f-6bfd81685fd7">
+    <Dimension dwd:design-time-name="13f6c848-3beb-4ef0-9319-e99b5f4a1ab4">
       <ID>Facts</ID>
       <Name>Facts</Name>
       <DimensionID>Facts</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="c8ebb94f-00fa-49c5-ade0-8b40da7e5955">
+        <Attribute dwd:design-time-name="35986af5-15b8-4bf6-9d85-e17472bf3c20">
           <AttributeID>Time Key</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="373a70f4-462e-4099-b1bf-83948266920a">
+        <Attribute dwd:design-time-name="5a1a60fa-716b-487a-a2fa-e3c2227238a7">
           <AttributeID>Insect Key</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d3827bc2-de9c-4c70-9e31-38325e52aea2">
+        <Attribute dwd:design-time-name="68044982-c4c7-4132-83db-044d9baf2694">
           <AttributeID>Facts - Time Key</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="4c300f52-3aac-4efa-9f10-37ac0d4d74f3">
+        <Attribute dwd:design-time-name="62a5b483-e934-453f-862a-0011c633e5f0">
           <AttributeID>Trap Key</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="fe4c9edb-6bcd-4850-b3e3-894ce62264b6">
+        <Attribute dwd:design-time-name="6361ffc6-2646-4d38-9244-176c7585e7e8">
           <AttributeID>Farmer Key</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="8afedbb1-55e1-4b1e-898a-a4909b75a49a">
+        <Attribute dwd:design-time-name="83e18a33-1b2a-46c5-a97c-d699369e9adc">
           <AttributeID>Pesticides Level</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="11dd9529-3c2a-4683-9ebe-9045fa45305b">
+        <Attribute dwd:design-time-name="27f1d0ee-87d2-419f-be2e-93012fcf640f">
           <AttributeID>Insect Quantity</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="0357f487-de1a-4c1a-a78d-2d2dee5d7749">
+        <Attribute dwd:design-time-name="84672c0c-9d92-43a4-84fa-a36640ba7f51">
           <AttributeID>Approximate Size</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="3a351dd9-48a4-41cc-a45a-03d3768f0134">
+        <Attribute dwd:design-time-name="72cb5d6d-b97e-4520-8442-f5d4df8a2c65">
           <AttributeID>Ecosystem</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="38251244-660b-4577-a48a-bc7e57cdefbb">
+        <Attribute dwd:design-time-name="c734b8fc-305a-4528-8fac-21e6955d5d2c">
           <AttributeID>Insect Age</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="3b920b40-b8b5-4b7c-8630-39f49b06ae45">
+        <Attribute dwd:design-time-name="24038f0d-1aa4-46f0-b0cb-c1811b55770e">
           <AttributeID>Checked Insect Line</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7eb902d6-2b9d-4f83-b7e5-bbbf556b6326">
+          <AttributeID>Pesticides Level Formated</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="3d77bc02-91e9-45ca-974e-8149f3b94c32">
+    <Dimension dwd:design-time-name="d3173f8d-16a6-4353-9c7a-620f5a3a0790">
       <ID>Insect</ID>
       <Name>Insect</Name>
       <DimensionID>Insect</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="9daddeb7-6389-4abd-af66-e26270568f96">
+        <Attribute dwd:design-time-name="4cbfd18e-c4f3-4750-b5d2-b24adb57e766">
           <AttributeID>Insect Key</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="5784a56f-d589-4deb-89bd-4430aef4132f">
+        <Attribute dwd:design-time-name="ab6c3305-e6b7-4925-b82d-aee3241a9e86">
           <AttributeID>Name</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="c597ca1a-fdd0-4d26-a7c7-5830515fd63c">
+        <Attribute dwd:design-time-name="82af500c-8513-472f-a41e-1f34d4b336c6">
           <AttributeID>Max Size</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ab80906d-8d01-43c4-bfee-bddc1e69c11d">
+        <Attribute dwd:design-time-name="5eefc62c-2fc5-41de-98b1-1343b570ae2d">
           <AttributeID>Min Size</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a8705389-73fc-4aab-9ad4-a5b77414eae5">
+        <Attribute dwd:design-time-name="3199cf07-33e1-4315-9ef7-4f4299ef521d">
           <AttributeID>Sub Kind</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d1380ebd-22ac-4a0b-9ac0-4527f5fa3c8b">
+        <Attribute dwd:design-time-name="e55252e9-77da-4067-a419-865473dfb7ea">
           <AttributeID>Diet</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6d51d356-2551-4ff4-8d12-6cfb2b05ff41">
+        <Attribute dwd:design-time-name="dcda30c4-12ca-41a6-8af4-804e659e4aa9">
           <AttributeID>Type</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="ffcbc69a-86f0-468f-b5ff-71cfb0f8df94">
+    <Dimension dwd:design-time-name="0b4a6152-22aa-4d67-871f-f2ff26304c39">
       <ID>Trap</ID>
       <Name>Trap</Name>
       <DimensionID>Trap</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="b1c0df0b-b3b5-49a2-a0ae-f9cd05bef604">
+        <Attribute dwd:design-time-name="f735e978-2b85-4889-bbb2-f698421351d0">
           <AttributeID>Trap Key</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="72f7eb55-cb17-46a6-abf2-0d5480c35132">
+        <Attribute dwd:design-time-name="f23a8461-c344-4fbb-99b3-b7cecce82f2f">
           <AttributeID>Location</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="1d16f90e-3a22-4718-ac2e-107cda03d823">
+    <Dimension dwd:design-time-name="c030f95e-e3b6-4ae6-8ed6-a5f57597ae5c">
       <ID>Farmer</ID>
       <Name>Farmer</Name>
       <DimensionID>Farmer</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="b28e7611-01be-4285-aa3a-242b9de7357c">
+        <Attribute dwd:design-time-name="ddf9daf2-b0f9-4109-98b3-8d1302a953c5">
           <AttributeID>Farmer Key</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="66e4b54a-c519-4926-b108-51f421d6518a">
+        <Attribute dwd:design-time-name="c47bea18-6b86-407b-a4bd-0ead2727a06a">
           <AttributeID>Farmer ID</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="2b1489dd-57d0-4d74-8efe-a58e88f44647">
+        <Attribute dwd:design-time-name="f44be31d-0455-44dc-a9e7-abbd3893cea9">
           <AttributeID>Farmer Address</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="74bb4d53-44e2-45b3-bb57-6468c90ff874">
+        <Attribute dwd:design-time-name="d35dd3f3-15bf-45f9-b4e6-e0c36d5b6579">
           <AttributeID>Start Date</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a2153a5b-bf5e-41bb-8f7f-028ff5c33882">
+        <Attribute dwd:design-time-name="e9492cd6-3214-4c19-b9ae-46ac5896a3d8">
           <AttributeID>End Date</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
-    <Dimension dwd:design-time-name="3df66688-d2ea-49ef-8e2d-f625bf623032">
+    <Dimension dwd:design-time-name="05270f7c-f7ce-44b8-89ac-920b9b357052">
       <ID>Time</ID>
       <Name>Time</Name>
       <DimensionID>Time</DimensionID>
       <Attributes>
-        <Attribute dwd:design-time-name="07c98828-c9d1-4605-b67e-1da5358db774">
+        <Attribute dwd:design-time-name="0e9eee59-5be0-44e6-ad24-400020dbd94d">
           <AttributeID>Time Key</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ee6970dc-8792-433a-aa52-0e19e9fa8b5e">
+        <Attribute dwd:design-time-name="d1f5539a-bb3f-4ca2-8e20-3d1529510182">
           <AttributeID>Year</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="bc4b793f-5fd1-4699-af85-f350c1b00493">
+        <Attribute dwd:design-time-name="13ce6079-e005-408f-a5b2-f5c39b949739">
           <AttributeID>Month</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="b0efa432-842d-476a-9b52-550c0da73a31">
+        <Attribute dwd:design-time-name="0608fcf5-ba55-440b-b1cd-8beb9641d22a">
           <AttributeID>Day</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="8be697ca-e261-4f16-899f-b6c05f8fc03a">
+        <Attribute dwd:design-time-name="97dac4f4-5a9a-4d88-8cb6-60fe1559dd5e">
           <AttributeID>Lunar Day</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="a6b0d3a5-ef32-4078-96a0-515915dbef47">
+        <Attribute dwd:design-time-name="640ddf1d-7bf9-4392-b329-e36651f03155">
           <AttributeID>Lunar Month</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="ff418d78-c08f-4ce1-a9ed-47256b09b413">
+        <Attribute dwd:design-time-name="9631ae57-561e-4739-a32d-c97cb7774509">
           <AttributeID>Lunar Year</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="d3ceff79-636c-4826-8751-b122aa64e2ad">
+        <Attribute dwd:design-time-name="c5f6d881-823c-4b82-89a5-4e35734bda43">
           <AttributeID>Year Month</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="6812709d-0006-40b8-bad1-e4396d71e964">
+        <Attribute dwd:design-time-name="d480b8e8-ad87-456e-8b15-a304338eef20">
           <AttributeID>Day Formated</AttributeID>
         </Attribute>
-        <Attribute dwd:design-time-name="2e0c5ca6-b0eb-4acb-bb31-4860b198dd3e">
+        <Attribute dwd:design-time-name="9b7adc04-1a3a-4644-872e-f44129fa55a8">
           <AttributeID>Month Formated</AttributeID>
         </Attribute>
       </Attributes>
     </Dimension>
   </Dimensions>
   <MeasureGroups>
-    <MeasureGroup dwd:design-time-name="9257ec79-9ea7-4b53-8ee4-0f4349417866">
+    <MeasureGroup dwd:design-time-name="63ba3c23-b57a-4a29-8de9-13afa57a8e8f">
       <ID>Facts</ID>
       <Name>Facts</Name>
       <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -339,58 +342,58 @@
       <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
       <State>Unprocessed</State>
       <Measures>
-        <Measure dwd:design-time-name="ec695f25-3289-47d2-9444-a7bb395cc1d8">
+        <Measure dwd:design-time-name="a413ed74-3216-47df-9aa4-bd2c67cb98aa">
           <ID>Pesticides Level</ID>
           <Name>Pesticides Level</Name>
-          <Source dwd:design-time-name="a9fe7266-b280-449d-868b-0f07e71c58c1">
+          <Source dwd:design-time-name="2a560c10-487e-47fa-8d9a-d0f16a650ab4">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="432d687a-b003-406c-b824-ec45a0750fcf">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="dbe8bf37-bcf7-4546-8646-302fc3519d57">
               <TableID>dbo_Facts</TableID>
               <ColumnID>PesticidesLevel</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="7ca2fcab-aafa-4f9a-8f7e-19b517f498a7">
+        <Measure dwd:design-time-name="c8990d9a-ebeb-4dc6-9981-e3ffc3c62d41">
           <ID>Insect Quantity</ID>
           <Name>Insect Quantity</Name>
-          <Source dwd:design-time-name="6d825193-1b62-41c8-8316-e7c0a8a27321">
+          <Source dwd:design-time-name="590fa427-d5fe-4f65-9ea2-e3095be8d683">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="27eeea8d-6d71-470b-944c-5b87ce2dc2fc">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b18b73ea-2009-4df3-8277-fc339978a1ba">
               <TableID>dbo_Facts</TableID>
               <ColumnID>InsectQuantity</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="7c3844c5-06b6-4b27-9188-999fa56f0206">
+        <Measure dwd:design-time-name="5562fb19-4bbe-485a-b762-3b1f6f0a8f92">
           <ID>Approximate Size</ID>
           <Name>Approximate Size</Name>
-          <Source dwd:design-time-name="41f373a6-f659-4f8f-8fbb-6febf0a07d76">
+          <Source dwd:design-time-name="942f4e62-a170-4cb4-a39b-f84c2858e8c8">
             <DataType>Double</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="bd77495c-199c-41b9-a88f-3edeef5e50f5">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="636196b5-e5eb-4bd1-9dfb-699043ad151b">
               <TableID>dbo_Facts</TableID>
               <ColumnID>ApproximateSize</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="3697465e-2a9e-4001-9ca8-9fc195cd2986">
+        <Measure dwd:design-time-name="fcf60bd2-22b4-47fb-a070-f56829de17cd">
           <ID>Checked Insect Line</ID>
           <Name>Checked Insect Line</Name>
-          <Source dwd:design-time-name="de682dbd-fab9-48ab-bff2-6d10b64fde2f">
+          <Source dwd:design-time-name="8a519a60-2ccf-4a2f-a881-23db0fd347fa">
             <DataType>Integer</DataType>
-            <Source xsi:type="ColumnBinding" dwd:design-time-name="b4196c1e-014d-4cf2-954a-03f41d7a70cb">
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="09aa677a-7687-4ccc-96ee-0909965a95fd">
               <TableID>dbo_Facts</TableID>
               <ColumnID>CheckedInsectLine</ColumnID>
             </Source>
           </Source>
         </Measure>
-        <Measure dwd:design-time-name="91fe4908-b448-4bc2-8cff-490484746392">
+        <Measure dwd:design-time-name="2168ed12-9ddd-49e1-a131-5ed14e5afcfb">
           <ID>Facts Count</ID>
           <Name>Facts Count</Name>
           <AggregateFunction>Count</AggregateFunction>
-          <Source dwd:design-time-name="6aec37d9-4a64-478e-99c3-8323739671be">
+          <Source dwd:design-time-name="b444d3b1-af8c-4c11-b3d8-2393d9ccaad7">
             <DataType>Integer</DataType>
             <DataSize>4</DataSize>
-            <Source xsi:type="RowBinding" dwd:design-time-name="29bacdee-82d7-4947-8423-bb09cc84863c">
+            <Source xsi:type="RowBinding" dwd:design-time-name="9ed3d8b9-ae25-4b9e-b44b-c8472731000b">
               <TableID>dbo_Facts</TableID>
             </Source>
           </Source>
@@ -399,36 +402,36 @@
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
       <Dimensions>
-        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="63dc8142-3f27-425d-9627-6569b4c463f6">
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="9abfcb0d-2f10-4279-9c56-974a6890ce4b">
           <CubeDimensionID>Facts</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="8a979e73-f2dd-4215-a975-a7e552275482">
+            <Attribute dwd:design-time-name="e20ff167-58ec-4cf5-aca5-cb3328b02610">
               <AttributeID>Time Key</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="1a4a96d6-1359-414a-a0f6-7de01ef937cf">
+                <KeyColumn dwd:design-time-name="03d9949a-5313-4d8e-a2c4-ec7a96aa4592">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c70e3019-b4bc-4a91-8e58-0ae5109fae91">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f6dfb2e5-5fe1-4e59-8dc1-172dccbe72e7">
                     <TableID>dbo_Facts</TableID>
                     <ColumnID>TimeKey</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="1addf597-c514-4756-9ed1-38967646e334">
+                <KeyColumn dwd:design-time-name="39916274-f5a6-466e-bae5-6a7a818662ca">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="364f2527-5177-4d2a-93d7-5680d67bebfc">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="37d5a00e-d00e-4b81-b2db-33bd0d28e79f">
                     <TableID>dbo_Facts</TableID>
                     <ColumnID>FarmerKey</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="c59d6609-8c70-4d0d-9ede-b3bb24b357af">
+                <KeyColumn dwd:design-time-name="23e3b025-9567-43b3-8bbe-98d95ecfb523">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="04829a4a-d464-40a2-8df1-d38ad9117bf3">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f8c3cf8a-5ca7-4cd5-86e5-2caf8d016078">
                     <TableID>dbo_Facts</TableID>
                     <ColumnID>InsectKey</ColumnID>
                   </Source>
                 </KeyColumn>
-                <KeyColumn dwd:design-time-name="8c15c123-5ad1-439b-925a-2791e08e7182">
+                <KeyColumn dwd:design-time-name="47d84e8b-f25a-494b-a4a6-9fb2cdb09e44">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a7a7fd06-078d-48f2-b73d-c34aaf9ae5b3">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8b485bc1-70e4-44b9-95d8-890eb7a97985">
                     <TableID>dbo_Facts</TableID>
                     <ColumnID>TrapKey</ColumnID>
                   </Source>
@@ -438,15 +441,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="75330a13-5952-49da-b51b-8e78357e71eb">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5aa7d664-82c7-418c-a72b-3ec76387721b">
           <CubeDimensionID>Insect</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="8ffe1fc7-6d40-4f6e-b93c-e0ceff7fdb7c">
+            <Attribute dwd:design-time-name="3f274469-829b-4d00-b01f-310334b42aa5">
               <AttributeID>Insect Key</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="711c6cc9-d981-4eab-8091-8bd85a1ef969">
+                <KeyColumn dwd:design-time-name="10f0d308-cf30-423d-a60d-e6e282faa758">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="86203905-4bec-44f1-ba4d-131c11a15f2e">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5c2b1237-3b32-42fb-b2ef-6725d16241b5">
                     <TableID>dbo_Facts</TableID>
                     <ColumnID>InsectKey</ColumnID>
                   </Source>
@@ -456,15 +459,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6db9b2e8-cf21-4537-b570-54fc9776094e">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="40f6e06d-5d79-43d2-956a-70b0c9695a78">
           <CubeDimensionID>Trap</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="cf111f3b-6cb9-480d-9a5a-d2b11ec3466a">
+            <Attribute dwd:design-time-name="da487bf9-29c1-426c-9d24-362e5555cbda">
               <AttributeID>Trap Key</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="8fe06db6-d1d0-44a1-8d3b-1f55ddf29879">
+                <KeyColumn dwd:design-time-name="9749baf4-ddd0-4ae1-981b-32a2cb4a4f36">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9a92330d-ae32-44a2-9ed0-f960fc0de988">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7c828226-3273-4496-96ba-5000ab6051f1">
                     <TableID>dbo_Facts</TableID>
                     <ColumnID>TrapKey</ColumnID>
                   </Source>
@@ -474,15 +477,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8fc82cf2-e988-4b47-b010-e65002057139">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="aca41305-e66e-419e-a8ee-d2b4e0ac5a77">
           <CubeDimensionID>Farmer</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="fdb6956f-eb95-45e7-b35e-fbd45352a80a">
+            <Attribute dwd:design-time-name="388bd6b4-fae8-40b0-a881-6883766ddaea">
               <AttributeID>Farmer Key</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="345236e9-c13c-4456-9569-d407b1bcbc81">
+                <KeyColumn dwd:design-time-name="6862a804-6f15-4df3-9241-f0ef0da01fac">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5f211d97-bca4-4a82-8ef3-93a8f4afc5f4">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d96c54e5-1b41-48a1-a6a9-e0497d5e5872">
                     <TableID>dbo_Facts</TableID>
                     <ColumnID>FarmerKey</ColumnID>
                   </Source>
@@ -492,15 +495,15 @@
             </Attribute>
           </Attributes>
         </Dimension>
-        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1d775eb5-5cdb-499c-9f67-fff484ee4f35">
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b46b3bc5-7b19-49a5-a168-ad41cb01dac3">
           <CubeDimensionID>Time</CubeDimensionID>
           <Attributes>
-            <Attribute dwd:design-time-name="00c1204d-ba13-4657-b0cf-7820a1ca57a3">
+            <Attribute dwd:design-time-name="89cf4e56-0d17-433d-b695-89d3e13b44c9">
               <AttributeID>Time Key</AttributeID>
               <KeyColumns>
-                <KeyColumn dwd:design-time-name="6aeca939-0b8a-4229-8db6-d4db7648a19b">
+                <KeyColumn dwd:design-time-name="9c6917d5-f9a1-4436-a463-66a3e2e06b9d">
                   <DataType>Integer</DataType>
-                  <Source xsi:type="ColumnBinding" dwd:design-time-name="90a72129-727b-4c40-9a86-d02340a29ecd">
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0f9391f3-c824-427d-86f4-49da3c0aee87">
                     <TableID>dbo_Facts</TableID>
                     <ColumnID>TimeKey</ColumnID>
                   </Source>
@@ -514,7 +517,7 @@
       <Partitions />
     </MeasureGroup>
   </MeasureGroups>
-  <Source dwd:design-time-name="86fc2fb7-29d8-4b27-9c08-c9a28289475b">
+  <Source dwd:design-time-name="b3522434-bff2-4141-8a21-d6ceda0fae83">
     <DataSourceViewID>IS1308 Ray Nau DW</DataSourceViewID>
   </Source>
 </Cube>

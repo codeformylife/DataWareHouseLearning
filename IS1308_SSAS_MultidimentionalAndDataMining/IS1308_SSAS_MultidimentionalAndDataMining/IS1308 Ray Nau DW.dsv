@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="bf26f918-4040-4a96-a751-5a89a913581b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f23d28ff-c45e-4598-9760-31f4ee990fbe" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>IS1308 Ray Nau DW</ID>
   <Name>IS1308 Ray Nau DW</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -206,6 +206,13 @@
                   </xs:element>
                   <xs:element name="InsectAge" msprop:design-time-name="5ed91bbc-d90a-4a8a-ac0b-db34d6557873" msprop:DbColumnName="InsectAge" msprop:FriendlyName="InsectAge" type="xs:boolean" minOccurs="0" />
                   <xs:element name="CheckedInsectLine" msprop:design-time-name="6dd98acc-c495-44a2-854a-478f87a725be" msprop:DbColumnName="CheckedInsectLine" msprop:FriendlyName="CheckedInsectLine" type="xs:int" minOccurs="0" />
+                  <xs:element name="PesticidesLevelFormated" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="RIGHT('0' + CAST(PesticidesLevel AS VARCHAR), 2)" msprop:IsLogical="True" msprop:design-time-name="2c30efc0-98e9-43d0-9427-6e7d0daec338" msprop:DbColumnName="PesticidesLevelFormated" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
@@ -275,14 +282,14 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="DayFormated" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="RIGHT('0' + CAST(Day AS VARCHAR), 2)" msprop:IsLogical="True" msprop:design-time-name="f3f9c76e-835b-4557-80ad-5b6b71011432" msprop:DbColumnName="DayFormated" minOccurs="0">
+                  <xs:element name="DayFormated" msdata:ReadOnly="true" msprop:design-time-name="f3f9c76e-835b-4557-80ad-5b6b71011432" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="DayFormated" msprop:ComputedColumnExpression="RIGHT('0' + CAST(Day AS VARCHAR), 2)" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="2" />
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
-                  <xs:element name="MonthFormated" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="RIGHT('0' + CAST(Month AS VARCHAR), 2)" msprop:IsLogical="True" msprop:design-time-name="c6f31785-4db9-4137-abf8-7a991f9bb899" msprop:DbColumnName="MonthFormated" minOccurs="0">
+                  <xs:element name="MonthFormated" msdata:ReadOnly="true" msprop:design-time-name="c6f31785-4db9-4137-abf8-7a991f9bb899" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="MonthFormated" msprop:ComputedColumnExpression="RIGHT('0' + CAST(Month AS VARCHAR), 2)" minOccurs="0">
                     <xs:simpleType>
                       <xs:restriction base="xs:string">
                         <xs:maxLength value="2" />
@@ -332,21 +339,21 @@
           <xs:selector xpath=".//dbo_Trap" />
           <xs:field xpath="TrapKey" />
         </xs:unique>
-        <xs:keyref name="FK_Facts_Insect1" refer="dbo_Insect_Constraint1">
+        <xs:keyref name="FK_Facts_Farmer1" refer="dbo_Farmer_Constraint1">
           <xs:selector xpath=".//dbo_Facts" />
-          <xs:field xpath="InsectKey" />
-        </xs:keyref>
-        <xs:keyref name="FK_Facts_Time1" refer="dbo_Time_Constraint1">
-          <xs:selector xpath=".//dbo_Facts" />
-          <xs:field xpath="TimeKey" />
+          <xs:field xpath="FarmerKey" />
         </xs:keyref>
         <xs:keyref name="FK_Facts_Trap1" refer="dbo_Trap_Constraint1">
           <xs:selector xpath=".//dbo_Facts" />
           <xs:field xpath="TrapKey" />
         </xs:keyref>
-        <xs:keyref name="FK_Facts_Farmer1" refer="dbo_Farmer_Constraint1">
+        <xs:keyref name="FK_Facts_Time1" refer="dbo_Time_Constraint1">
           <xs:selector xpath=".//dbo_Facts" />
-          <xs:field xpath="FarmerKey" />
+          <xs:field xpath="TimeKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_Facts_Insect1" refer="dbo_Insect_Constraint1">
+          <xs:selector xpath=".//dbo_Facts" />
+          <xs:field xpath="InsectKey" />
         </xs:keyref>
       </xs:element>
     </xs:schema>
