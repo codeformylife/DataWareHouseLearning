@@ -19,42 +19,42 @@
     <ObjectSnapshots>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
-        <TimeStamp>p3laq8EkNhJKA7qKd1OSFWlXBrQ=7/28/2020 1:48:24 AM7/28/2020 1:15:15 AM</TimeStamp>
+        <TimeStamp>p3laq8EkNhJKA7qKd1OSFWlXBrQ=7/28/2020 5:31:31 PM7/28/2020 5:31:31 PM</TimeStamp>
         <ID>
           <String>Adventure Works DW2019</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.DataSourceView</Type>
-        <TimeStamp>+ebB0kgJi4Pwg/YrdFzAM9Zuku4=7/28/2020 1:19:48 AM7/28/2020 1:16:43 AM</TimeStamp>
+        <TimeStamp>+ebB0kgJi4Pwg/YrdFzAM9Zuku4=7/28/2020 5:31:31 PM7/28/2020 5:31:31 PM</TimeStamp>
         <ID>
           <String>Adventure Works DW2019</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>3lT4M6EBIVQ0Iy/H7yYho29VsfE=7/28/2020 1:23:34 AM7/28/2020 1:23:34 AM</TimeStamp>
+        <TimeStamp>3lT4M6EBIVQ0Iy/H7yYho29VsfE=7/28/2020 5:31:31 PM7/28/2020 5:31:31 PM</TimeStamp>
         <ID>
           <String>Dim Date</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>hEZKitdK4IPHW9hGHHjkLDrE574=7/28/2020 1:29:41 AM7/28/2020 1:26:10 AM</TimeStamp>
+        <TimeStamp>hEZKitdK4IPHW9hGHHjkLDrE574=7/28/2020 5:31:31 PM7/28/2020 5:31:31 PM</TimeStamp>
         <ID>
           <String>Dim Customer</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>tzPpsU6A/ggrKSA+r4fRxVgOdiU=7/28/2020 1:31:01 AM7/28/2020 1:26:10 AM</TimeStamp>
+        <TimeStamp>tzPpsU6A/ggrKSA+r4fRxVgOdiU=7/28/2020 5:31:31 PM7/28/2020 5:31:31 PM</TimeStamp>
         <ID>
           <String>Dim Product</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>bdwXnTV1Xz1mNmnFcB2U2pPRX4E=7/28/2020 1:31:01 AM7/28/2020 1:26:10 AMhLIxdaC1sj0B9cRsR21PnM2jO38=7/28/2020 1:26:11 AM7/28/2020 1:26:10 AM</TimeStamp>
+        <TimeStamp>bdwXnTV1Xz1mNmnFcB2U2pPRX4E=7/28/2020 5:31:31 PM7/28/2020 5:31:31 PMhLIxdaC1sj0B9cRsR21PnM2jO38=7/28/2020 5:31:31 PM7/28/2020 5:31:31 PM</TimeStamp>
         <ID>
           <String>Adventure Works DW2019</String>
         </ID>
@@ -62,7 +62,7 @@
     </ObjectSnapshots>
     <DatabaseSnapshot>
       <Type>Microsoft.AnalysisServices.Database</Type>
-      <TimeStamp>wX9cw73WdmSK4WCNOg6p6x/PJCE=7/28/2020 1:08:34 AM7/28/2020 1:08:34 AM</TimeStamp>
+      <TimeStamp>wX9cw73WdmSK4WCNOg6p6x/PJCE=7/28/2020 5:31:31 PM7/28/2020 5:31:31 PM</TimeStamp>
       <ID>
         <String>SSAS_MultidimentionalAndDataMining_DEMO</String>
       </ID>
@@ -70,6 +70,6 @@
     <Granularity>Coarse</Granularity>
   </Snapshot>
   <AssemblyLocations />
-  <ProcessingComplete>false</ProcessingComplete>
-  <LastDeployed>2020-07-27T20:20:25.506667Z</LastDeployed>
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-07-28T10:32:34.686667Z</LastDeployed>
 </DeploymentSnapshot>
