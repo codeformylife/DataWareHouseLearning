@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="42ba43c3-7b62-4ef4-ac09-abc16cb73878" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="40e61a5c-95b6-4986-b636-f8b6da470f31" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Farmer</ID>
   <Name>Farmer</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3632" scrolltop="-6972" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="17092" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4452" scrolltop="-4445" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12012" y="12039" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -47,11 +47,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-3632</Value>
+      <Value>-4452</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-6972</Value>
+      <Value>-4445</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -68,39 +68,39 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="aa5311ee-e7b8-4405-974e-2fab694ad1fc">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="5a21ea3f-2e26-4ad8-ba96-d56e45e5afcd">
     <DataSourceViewID>IS1308 Ray Nau DW</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="16cc1b24-484a-43a7-a440-3991c9e052d8">
+  <ErrorConfiguration dwd:design-time-name="4bb12293-5d0c-418f-a82d-79cfb70b6a59">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="7f0da1f7-c44b-40cb-9b24-c0fabf9ebc58">
+    <Attribute dwd:design-time-name="a1aa42f3-9579-4757-a1cd-9984d6dce4f6">
       <ID>Farmer Key</ID>
       <Name>Farmer Key</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="4d96296d-1161-4ea0-a3f0-bdaaba833116">
+        <KeyColumn dwd:design-time-name="d20916cf-a799-4bf4-9fe9-421564dd1ea7">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c2e066cc-18c2-460e-b3a0-141ba6a5838f">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="64e9fe8d-0460-47b2-b89d-0544ae3faefd">
             <TableID>dbo_Farmer</TableID>
             <ColumnID>FarmerKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="24bb106c-ec3c-476d-bdd3-a77944c87dda">
+        <AttributeRelationship dwd:design-time-name="739e6139-d0d9-4bd2-892e-7ede7e4045d1">
           <AttributeID>Farmer Address</AttributeID>
           <Name>Farmer Address</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="32e4c023-4fb1-45eb-bc70-ea92a3681cf9">
+        <AttributeRelationship dwd:design-time-name="ffb57cc0-a4dd-4ba4-ba8d-e744354f5b14">
           <AttributeID>Start Date</AttributeID>
           <Name>Start Date</Name>
         </AttributeRelationship>
-        <AttributeRelationship dwd:design-time-name="22e29d64-d351-44f2-b468-5b459751c90c">
+        <AttributeRelationship dwd:design-time-name="ecc283ea-99bf-4cbc-ab55-e8522cc62046">
           <AttributeID>End Date</AttributeID>
           <Name>End Date</Name>
         </AttributeRelationship>
@@ -109,14 +109,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="038e2f6d-32af-4181-ad9b-dda81aaa1dc0">
+    <Attribute dwd:design-time-name="b65e5699-95a9-4e8d-ad1b-c61590329788">
       <ID>Farmer Address</ID>
       <Name>Farmer Address</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="8b423f4b-7142-49e0-bd33-d482a43e86f5">
+        <KeyColumn dwd:design-time-name="770155ab-1b05-4d49-a3a0-1aca69c5761a">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="38161e34-02cc-42f7-9679-832f3aa51a4d">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d29fd2d-a1c9-4661-87cc-5b278326a82b">
             <TableID>dbo_Farmer</TableID>
             <ColumnID>FarmerAddress</ColumnID>
           </Source>
@@ -125,13 +125,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="c14dac79-3bca-409c-9721-24ed3d6e9f73">
+    <Attribute dwd:design-time-name="3b01db45-6b5c-481a-af57-89edfcd25fed">
       <ID>Start Date</ID>
       <Name>Start Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="3c44d6f4-3d8c-4258-bb49-51e9070bdec1">
+        <KeyColumn dwd:design-time-name="6ab55d65-d8bd-4f48-aef3-4525d5d26fe4">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a561e5e9-ff93-425f-a987-b930daf28711">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4623caaa-d925-41ee-bd1b-8fafc6cf55be">
             <TableID>dbo_Farmer</TableID>
             <ColumnID>StartDate</ColumnID>
           </Source>
@@ -140,13 +140,13 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="2fe39488-3822-40d4-8f8b-e631c975ce2f">
+    <Attribute dwd:design-time-name="a5c6e1d5-dbf9-4134-ad27-9f8d7aa2d0b0">
       <ID>End Date</ID>
       <Name>End Date</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="9c88442a-005f-4458-8840-3c6705a86293">
+        <KeyColumn dwd:design-time-name="cb1f03f7-a1cb-4459-a290-3309cea85ecb">
           <DataType>Date</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="c871da45-c43f-4cc4-a27d-6910f27a6471">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9c6cc34-8f66-4f1f-a318-8e2061352d26">
             <TableID>dbo_Farmer</TableID>
             <ColumnID>EndDate</ColumnID>
           </Source>
@@ -157,24 +157,14 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="6b524874-bbdb-4509-b568-136154fe85e0">
+    <Hierarchy dwd:design-time-name="76b49e7c-91f4-4aa8-a48e-96f041f44784">
       <ID>Hierarchy</ID>
       <Name>Hierarchy</Name>
       <Levels>
-        <Level dwd:design-time-name="2c72a5a1-dea7-48f4-b82e-81b6a1c07c90">
-          <ID>Farmer Address</ID>
-          <Name>Farmer Address</Name>
-          <SourceAttributeID>Farmer Address</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="9d7318c8-ec68-43ea-a25e-3c4d1738cd44">
+        <Level dwd:design-time-name="11086fac-3c0c-4065-a7b1-032b8b2f0900">
           <ID>Start Date</ID>
           <Name>Start Date</Name>
           <SourceAttributeID>Start Date</SourceAttributeID>
-        </Level>
-        <Level dwd:design-time-name="05895d2c-9cdd-4f49-8af6-5bd202adf1c5">
-          <ID>End Date</ID>
-          <Name>End Date</Name>
-          <SourceAttributeID>End Date</SourceAttributeID>
         </Level>
       </Levels>
     </Hierarchy>

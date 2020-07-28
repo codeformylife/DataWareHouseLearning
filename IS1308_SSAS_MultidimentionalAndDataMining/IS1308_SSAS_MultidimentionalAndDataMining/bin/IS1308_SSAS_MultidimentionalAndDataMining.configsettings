@@ -3,11 +3,10 @@
     <DataSources>
       <DataSource>
         <ID>IS1308 Ray Nau DW</ID>
-        <ConnectionString>Provider=SQLNCLI11.1;Data Source=MAYTINH;Integrated Security=SSPI;Initial Catalog=IS1308_Ray_Nau_DW</ConnectionString>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=MAYTINH;Persist Security Info=True;Password=;User ID=;Initial Catalog=IS1308_Ray_Nau_DW</ConnectionString>
         <ImpersonationInfo>
-          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
-          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">sa</Account>
-          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PasswordRemoved</ImpersonationInfoSecurity>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
         </ImpersonationInfo>
       </DataSource>
     </DataSources>
@@ -24,13 +23,10 @@
       <Dimension>
         <ID>Insect</ID>
       </Dimension>
-      <Dimension>
-        <ID>Facts</ID>
-      </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
-        <ID>IS1308 Ray Nau DW</ID>
+        <ID>IS1308RayNauDWCube</ID>
         <MeasureGroups>
           <MeasureGroup>
             <ID>Facts</ID>

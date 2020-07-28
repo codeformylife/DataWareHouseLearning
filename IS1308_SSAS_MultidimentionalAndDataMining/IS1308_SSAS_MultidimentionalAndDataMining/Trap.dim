@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d203df28-2350-454e-b8e1-d8bd659f41da" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2f0a0d84-d58d-4235-9036-083c6bda0aec" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Trap</ID>
   <Name>Trap</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3666" scrolltop="-7395" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10372" y="17092" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-4486" scrolltop="-4868" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12012" y="12039" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
             </font>
@@ -47,11 +47,11 @@
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
-      <Value>-3666</Value>
+      <Value>-4486</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
-      <Value>-7395</Value>
+      <Value>-4868</Value>
     </Annotation>
     <Annotation>
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
@@ -68,31 +68,31 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d1ad1fc8-9d71-4871-81ab-6cfa1778c872">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="59827d5b-67f5-48ae-b17b-566ccafd1d19">
     <DataSourceViewID>IS1308 Ray Nau DW</DataSourceViewID>
   </Source>
-  <ErrorConfiguration dwd:design-time-name="ada5590a-7f8c-4c1a-b125-41b9618b6fa6">
+  <ErrorConfiguration dwd:design-time-name="e3f562a0-07b7-4dcf-9eff-f9ffa1efdc28">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="4aa541ea-61dc-4c0a-9287-d2f9a5014bed">
+    <Attribute dwd:design-time-name="73459e36-fb53-4e76-b7ee-8616d665bf36">
       <ID>Trap Key</ID>
       <Name>Trap Key</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="c57ad537-e635-4779-8be3-a968bba7a2d0">
+        <KeyColumn dwd:design-time-name="ab3c68bd-2f9f-40ec-8c7d-d01cc52d8fb2">
           <DataType>Integer</DataType>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d670038-4e12-42ca-863b-376ed141db3a">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="69ee6214-f4f2-478c-b9f5-f282b48e3b38">
             <TableID>dbo_Trap</TableID>
             <ColumnID>TrapKey</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="1be4bdfe-a001-45ed-b6e2-79d68800d22d">
+        <AttributeRelationship dwd:design-time-name="2f38ee56-a311-455d-b263-35e79c981edc">
           <AttributeID>Location</AttributeID>
           <Name>Location</Name>
         </AttributeRelationship>
@@ -101,14 +101,14 @@
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="7864859d-6572-4062-9d7b-54bc9d172509">
+    <Attribute dwd:design-time-name="d8910c9b-ab8a-4b94-8624-531b1abd3f14">
       <ID>Location</ID>
       <Name>Location</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="57a7b018-1463-4c66-aabe-176ddea10410">
+        <KeyColumn dwd:design-time-name="c0bf6f05-844d-492c-bc05-2610db4e174a">
           <DataType>WChar</DataType>
           <DataSize>255</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="e5f222b0-bb03-4e96-baf5-a27b4443fbdc">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6cf83322-40f6-4cfb-8928-794d9a282b1c">
             <TableID>dbo_Trap</TableID>
             <ColumnID>Location</ColumnID>
           </Source>
@@ -119,11 +119,11 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="3888f527-5f5b-49c7-b2c3-5cc5cb750a6b">
+    <Hierarchy dwd:design-time-name="9314d119-d73b-44ae-ac35-2c26a2d7efd4">
       <ID>Hierarchy</ID>
       <Name>Hierarchy</Name>
       <Levels>
-        <Level dwd:design-time-name="e824da56-1c7e-45e7-9289-cba4ebb80d35">
+        <Level dwd:design-time-name="b0414a75-8731-4d3c-8c97-e347b1e52c9f">
           <ID>Location</ID>
           <Name>Location</Name>
           <SourceAttributeID>Location</SourceAttributeID>

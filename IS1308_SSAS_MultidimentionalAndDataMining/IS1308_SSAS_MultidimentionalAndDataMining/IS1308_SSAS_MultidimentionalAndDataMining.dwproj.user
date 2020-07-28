@@ -3,7 +3,21 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>localhost</TargetServer>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>IS1308 Ray Nau DW</Id>
+            <Name>IS1308 Ray Nau DW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMLd/01LKZUO2c/F7+pkqvAAAAAAkAAAASQBTADEAMwAwADgAIABSAGEAeQAgAE4AYQB1ACAARABXAAAAEGYAAAABAAAgAAAAe7TACNq9As+GtyMuW2oDOIx+N+9G1XFDvnT1qTZiRuwAAAAADoAAAAACAAAgAAAArM5WVOrLfhDlheAvVM/+DPQ8++8w6uU/sjYSbIaKlaAQAAAAWik8SjM02hOqY1bBhyFT1UAAAACyXIchuaWEeke+vbYsqUxYpVhZQiFs6n02rT1DsZ4H5OOZJ3GUkUUfBODumbVmih4Py1rfXwzeNONaUC92qUjf</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>IS1308 Ray Nau DW</Id>
+            <Name>IS1308 Ray Nau DW</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMLd/01LKZUO2c/F7+pkqvAAAAAAkAAAASQBTADEAMwAwADgAIABSAGEAeQAgAE4AYQB1ACAARABXAAAAEGYAAAABAAAgAAAA5arNGrcS37q4IjNgRiGzfVxjMBzfcYcLd9z59U9Sri8AAAAADoAAAAACAAAgAAAAtq7mYHcBrMwAvOt1fx5Vgef1g2fpqYBfu/8VBYrDs5QQAAAA9z37UV1M3gigOIX9pPAcg0AAAABqdtZbHP4pZ50tobNjOqMMKVZeTFXpqht4gPYlymGniJlSKki4b4Glo4ZwNS1qCM8yyzzH8Fm3OkC8j3grPOgV</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>MAYTINH</TargetServer>
         <TargetDatabase>IS1308_SSAS_MultidimentionalAndDataMining</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>

@@ -8,12 +8,12 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>IS1308 Ray Nau DW.cube</Name>
-      <FullPath>IS1308 Ray Nau DW.cube</FullPath>
+      <Name>IS1308RayNauDWCube.cube</Name>
+      <FullPath>IS1308RayNauDWCube.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>IS1308 Ray Nau DW.partitions</Name>
-          <FullPath>IS1308 Ray Nau DW.partitions</FullPath>
+          <Name>IS1308RayNauDWCube.partitions</Name>
+          <FullPath>IS1308RayNauDWCube.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
@@ -34,10 +34,6 @@
     <ProjectItem>
       <Name>Insect.dim</Name>
       <FullPath>Insect.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Facts.dim</Name>
-      <FullPath>Facts.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>
@@ -60,14 +56,14 @@
           <ConfigurationSetting>
             <Id>IS1308 Ray Nau DW</Id>
             <Name>IS1308 Ray Nau DW</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=MAYTINH;Integrated Security=SSPI;Initial Catalog=IS1308_Ray_Nau_DW</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=MAYTINH;Persist Security Info=True;Password=;User ID=;Initial Catalog=IS1308_Ray_Nau_DW</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
             <Id>IS1308 Ray Nau DW</Id>
             <Name>IS1308 Ray Nau DW</Name>
-            <Value xsi:type="xsd:int">0</Value>
+            <Value xsi:type="xsd:int">1</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
       </Options>
