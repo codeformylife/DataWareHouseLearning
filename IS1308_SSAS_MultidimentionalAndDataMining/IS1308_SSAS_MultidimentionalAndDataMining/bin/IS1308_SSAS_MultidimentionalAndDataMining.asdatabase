@@ -981,6 +981,14 @@
               <AttributeID>Year Month</AttributeID>
               <Name>Year Month</Name>
             </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Day Formated</AttributeID>
+              <Name>Day Formated</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Month Formated</AttributeID>
+              <Name>Month Formated</Name>
+            </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -1101,6 +1109,54 @@
             <Source xsi:type="ColumnBinding">
               <TableID>dbo_Time</TableID>
               <ColumnID>YearMonth</ColumnID>
+            </Source>
+          </ValueColumn>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Day Formated</ID>
+          <Name>Day Formated</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>2</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Time</TableID>
+                <ColumnID>DayFormated</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ValueColumn>
+            <DataType>WChar</DataType>
+            <DataSize>2</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>DayFormated</ColumnID>
+            </Source>
+          </ValueColumn>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Month Formated</ID>
+          <Name>Month Formated</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>2</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Time</TableID>
+                <ColumnID>MonthFormated</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ValueColumn>
+            <DataType>WChar</DataType>
+            <DataSize>2</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>MonthFormated</ColumnID>
             </Source>
           </ValueColumn>
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -1433,6 +1489,12 @@
             </Attribute>
             <Attribute>
               <AttributeID>Year Month</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Day Formated</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Month Formated</AttributeID>
             </Attribute>
           </Attributes>
         </Dimension>
@@ -1932,6 +1994,20 @@
                         <xs:simpleType>
                           <xs:restriction base="xs:string">
                             <xs:maxLength value="35" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="DayFormated" msdata:ReadOnly="true" msprop:design-time-name="f3f9c76e-835b-4557-80ad-5b6b71011432" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="DayFormated" msprop:ComputedColumnExpression="RIGHT('0' + CAST(Day AS VARCHAR), 2)" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="2" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="MonthFormated" msdata:ReadOnly="true" msprop:design-time-name="c6f31785-4db9-4137-abf8-7a991f9bb899" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="MonthFormated" msprop:ComputedColumnExpression="RIGHT('0' + CAST(Month AS VARCHAR), 2)" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="2" />
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>

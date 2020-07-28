@@ -321,6 +321,12 @@
         <Attribute dwd:design-time-name="d3ceff79-636c-4826-8751-b122aa64e2ad">
           <AttributeID>Year Month</AttributeID>
         </Attribute>
+        <Attribute dwd:design-time-name="6812709d-0006-40b8-bad1-e4396d71e964">
+          <AttributeID>Day Formated</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2e0c5ca6-b0eb-4acb-bb31-4860b198dd3e">
+          <AttributeID>Month Formated</AttributeID>
+        </Attribute>
       </Attributes>
     </Dimension>
   </Dimensions>

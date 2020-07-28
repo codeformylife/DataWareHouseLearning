@@ -120,6 +120,14 @@
           <AttributeID>Year Month</AttributeID>
           <Name>Year Month</Name>
         </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0421677b-493e-4c94-8dfa-53487056e222">
+          <AttributeID>Day Formated</AttributeID>
+          <Name>Day Formated</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bc2ebe12-b0cb-42b6-895d-e7cf18dc677c">
+          <AttributeID>Month Formated</AttributeID>
+          <Name>Month Formated</Name>
+        </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
@@ -240,6 +248,54 @@
         <Source xsi:type="ColumnBinding" dwd:design-time-name="a1f69080-cb13-43f2-970b-70093d240726">
           <TableID>dbo_Time</TableID>
           <ColumnID>YearMonth</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="fbb39b8e-b55b-45ce-899c-0b22f342bfaa">
+      <ID>Day Formated</ID>
+      <Name>Day Formated</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="11c86849-fe9f-4e0f-a29b-b17d1d02fb44">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4f4ad1e3-3351-4740-aa72-eead776b1f40">
+            <TableID>dbo_Time</TableID>
+            <ColumnID>DayFormated</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ValueColumn dwd:design-time-name="be1ae923-ed47-4fe6-9a98-67104f9be291">
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="48a61e63-8b69-451c-a0f0-4c2c1fea1ab6">
+          <TableID>dbo_Time</TableID>
+          <ColumnID>DayFormated</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="835bda5d-69d0-4d94-b3a0-c33d3d804bad">
+      <ID>Month Formated</ID>
+      <Name>Month Formated</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7d8655e2-894c-4027-b190-29f8206130b6">
+          <DataType>WChar</DataType>
+          <DataSize>2</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a14ee066-8706-4339-9a93-54d2c8db8736">
+            <TableID>dbo_Time</TableID>
+            <ColumnID>MonthFormated</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ValueColumn dwd:design-time-name="56530336-44f6-40e6-bc01-01e1d7de2429">
+        <DataType>WChar</DataType>
+        <DataSize>2</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c72fad3b-4e46-477a-9af1-13fc367840e8">
+          <TableID>dbo_Time</TableID>
+          <ColumnID>MonthFormated</ColumnID>
         </Source>
       </ValueColumn>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>

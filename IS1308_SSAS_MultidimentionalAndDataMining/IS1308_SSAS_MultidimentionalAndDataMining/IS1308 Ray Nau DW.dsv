@@ -275,6 +275,20 @@
                       </xs:restriction>
                     </xs:simpleType>
                   </xs:element>
+                  <xs:element name="DayFormated" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="RIGHT('0' + CAST(Day AS VARCHAR), 2)" msprop:IsLogical="True" msprop:design-time-name="f3f9c76e-835b-4557-80ad-5b6b71011432" msprop:DbColumnName="DayFormated" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MonthFormated" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="RIGHT('0' + CAST(Month AS VARCHAR), 2)" msprop:IsLogical="True" msprop:design-time-name="c6f31785-4db9-4137-abf8-7a991f9bb899" msprop:DbColumnName="MonthFormated" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
