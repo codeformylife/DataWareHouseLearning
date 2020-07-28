@@ -8,32 +8,36 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>IS1308RayNauDWCube.cube</Name>
-      <FullPath>IS1308RayNauDWCube.cube</FullPath>
+      <Name>IS1308 Ray Nau DW.cube</Name>
+      <FullPath>IS1308 Ray Nau DW.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>IS1308RayNauDWCube.partitions</Name>
-          <FullPath>IS1308RayNauDWCube.partitions</FullPath>
+          <Name>IS1308 Ray Nau DW.partitions</Name>
+          <FullPath>IS1308 Ray Nau DW.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Farmer.dim</Name>
-      <FullPath>Farmer.dim</FullPath>
+      <Name>Insect.dim</Name>
+      <FullPath>Insect.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Trap.dim</Name>
       <FullPath>Trap.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Time.dim</Name>
-      <FullPath>Time.dim</FullPath>
+      <Name>Farmer.dim</Name>
+      <FullPath>Farmer.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Insect.dim</Name>
-      <FullPath>Insect.dim</FullPath>
+      <Name>Facts.dim</Name>
+      <FullPath>Facts.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Time.dim</Name>
+      <FullPath>Time.dim</FullPath>
     </ProjectItem>
   </Dimensions>
   <DataSources>

@@ -12,21 +12,24 @@
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>Farmer</ID>
+        <ID>Insect</ID>
       </Dimension>
       <Dimension>
         <ID>Trap</ID>
       </Dimension>
       <Dimension>
-        <ID>Time</ID>
+        <ID>Farmer</ID>
       </Dimension>
       <Dimension>
-        <ID>Insect</ID>
+        <ID>Facts</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Time</ID>
       </Dimension>
     </Dimensions>
     <Cubes>
       <Cube>
-        <ID>IS1308RayNauDWCube</ID>
+        <ID>IS1308 Ray Nau DW</ID>
         <MeasureGroups>
           <MeasureGroup>
             <ID>Facts</ID>

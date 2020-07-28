@@ -1,0 +1,514 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8f63b7c8-8112-4cd5-b72c-a12c27420b84" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>IS1308 Ray Nau DW</ID>
+  <Name>IS1308 Ray Nau DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6352" scrolltop="401" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="97" x="34925" y="17092" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Trap" left="11471" top="6898" logicalid="10" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Trap" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Time" left="5745" top="12949" logicalid="11" controlid="2" masterid="0" hint1="0" hint2="0" width="4964" height="6613" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e000064130000d5190000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Time" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Farmer" left="5711" top="0" logicalid="12" controlid="3" masterid="0" hint1="0" hint2="0" width="3069" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fd0b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Farmer" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Insect" left="20" top="5839" logicalid="13" controlid="4" masterid="0" hint1="0" hint2="0" width="3000" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Insect" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Facts" left="5420" top="5549" logicalid="14" controlid="5" masterid="0" hint1="0" hint2="0" width="3651" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000430e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Facts" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8771" top="7650" logicalid="15" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Facts_Trap1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="5" sourceattachpoint="12" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="11471" y="8049" />
+              <point x="9071" y="8049" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="5628" top="10249" logicalid="16" controlid="7" masterid="0" hint1="0" hint2="0" width="817" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Facts_Time1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="5" sourceattachpoint="0" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6027" y="12949" />
+              <point x="6027" y="11749" />
+              <point x="6145" y="11749" />
+              <point x="6145" y="10549" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6846" top="2650" logicalid="17" controlid="8" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Facts_Farmer1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="5" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7245" y="3149" />
+              <point x="7245" y="5549" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="7649" logicalid="18" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="15856113" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Facts_Insect1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="5" sourceattachpoint="17" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3020" y="8048" />
+              <point x="4220" y="8048" />
+              <point x="4220" y="8049" />
+              <point x="5420" y="8049" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-6352</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>401</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>97</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="e69e539f-2190-4728-881f-6bfd81685fd7">
+      <ID>Facts</ID>
+      <Name>Facts</Name>
+      <DimensionID>Facts</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c8ebb94f-00fa-49c5-ade0-8b40da7e5955">
+          <AttributeID>Time Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="373a70f4-462e-4099-b1bf-83948266920a">
+          <AttributeID>Insect Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d3827bc2-de9c-4c70-9e31-38325e52aea2">
+          <AttributeID>Facts - Time Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4c300f52-3aac-4efa-9f10-37ac0d4d74f3">
+          <AttributeID>Trap Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe4c9edb-6bcd-4850-b3e3-894ce62264b6">
+          <AttributeID>Farmer Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8afedbb1-55e1-4b1e-898a-a4909b75a49a">
+          <AttributeID>Pesticides Level</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="11dd9529-3c2a-4683-9ebe-9045fa45305b">
+          <AttributeID>Insect Quantity</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0357f487-de1a-4c1a-a78d-2d2dee5d7749">
+          <AttributeID>Approximate Size</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3a351dd9-48a4-41cc-a45a-03d3768f0134">
+          <AttributeID>Ecosystem</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="38251244-660b-4577-a48a-bc7e57cdefbb">
+          <AttributeID>Insect Age</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3b920b40-b8b5-4b7c-8630-39f49b06ae45">
+          <AttributeID>Checked Insect Line</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3d77bc02-91e9-45ca-974e-8149f3b94c32">
+      <ID>Insect</ID>
+      <Name>Insect</Name>
+      <DimensionID>Insect</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9daddeb7-6389-4abd-af66-e26270568f96">
+          <AttributeID>Insect Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5784a56f-d589-4deb-89bd-4430aef4132f">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c597ca1a-fdd0-4d26-a7c7-5830515fd63c">
+          <AttributeID>Max Size</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ab80906d-8d01-43c4-bfee-bddc1e69c11d">
+          <AttributeID>Min Size</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a8705389-73fc-4aab-9ad4-a5b77414eae5">
+          <AttributeID>Sub Kind</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d1380ebd-22ac-4a0b-9ac0-4527f5fa3c8b">
+          <AttributeID>Diet</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6d51d356-2551-4ff4-8d12-6cfb2b05ff41">
+          <AttributeID>Type</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ffcbc69a-86f0-468f-b5ff-71cfb0f8df94">
+      <ID>Trap</ID>
+      <Name>Trap</Name>
+      <DimensionID>Trap</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b1c0df0b-b3b5-49a2-a0ae-f9cd05bef604">
+          <AttributeID>Trap Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="72f7eb55-cb17-46a6-abf2-0d5480c35132">
+          <AttributeID>Location</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1d16f90e-3a22-4718-ac2e-107cda03d823">
+      <ID>Farmer</ID>
+      <Name>Farmer</Name>
+      <DimensionID>Farmer</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b28e7611-01be-4285-aa3a-242b9de7357c">
+          <AttributeID>Farmer Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="66e4b54a-c519-4926-b108-51f421d6518a">
+          <AttributeID>Farmer ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2b1489dd-57d0-4d74-8efe-a58e88f44647">
+          <AttributeID>Farmer Address</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="74bb4d53-44e2-45b3-bb57-6468c90ff874">
+          <AttributeID>Start Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a2153a5b-bf5e-41bb-8f7f-028ff5c33882">
+          <AttributeID>End Date</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3df66688-d2ea-49ef-8e2d-f625bf623032">
+      <ID>Time</ID>
+      <Name>Time</Name>
+      <DimensionID>Time</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="07c98828-c9d1-4605-b67e-1da5358db774">
+          <AttributeID>Time Key</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ee6970dc-8792-433a-aa52-0e19e9fa8b5e">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bc4b793f-5fd1-4699-af85-f350c1b00493">
+          <AttributeID>Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b0efa432-842d-476a-9b52-550c0da73a31">
+          <AttributeID>Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8be697ca-e261-4f16-899f-b6c05f8fc03a">
+          <AttributeID>Lunar Day</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a6b0d3a5-ef32-4078-96a0-515915dbef47">
+          <AttributeID>Lunar Month</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ff418d78-c08f-4ce1-a9ed-47256b09b413">
+          <AttributeID>Lunar Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d3ceff79-636c-4826-8751-b122aa64e2ad">
+          <AttributeID>Year Month</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="9257ec79-9ea7-4b53-8ee4-0f4349417866">
+      <ID>Facts</ID>
+      <Name>Facts</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ec695f25-3289-47d2-9444-a7bb395cc1d8">
+          <ID>Pesticides Level</ID>
+          <Name>Pesticides Level</Name>
+          <Source dwd:design-time-name="a9fe7266-b280-449d-868b-0f07e71c58c1">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="432d687a-b003-406c-b824-ec45a0750fcf">
+              <TableID>dbo_Facts</TableID>
+              <ColumnID>PesticidesLevel</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7ca2fcab-aafa-4f9a-8f7e-19b517f498a7">
+          <ID>Insect Quantity</ID>
+          <Name>Insect Quantity</Name>
+          <Source dwd:design-time-name="6d825193-1b62-41c8-8316-e7c0a8a27321">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="27eeea8d-6d71-470b-944c-5b87ce2dc2fc">
+              <TableID>dbo_Facts</TableID>
+              <ColumnID>InsectQuantity</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7c3844c5-06b6-4b27-9188-999fa56f0206">
+          <ID>Approximate Size</ID>
+          <Name>Approximate Size</Name>
+          <Source dwd:design-time-name="41f373a6-f659-4f8f-8fbb-6febf0a07d76">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bd77495c-199c-41b9-a88f-3edeef5e50f5">
+              <TableID>dbo_Facts</TableID>
+              <ColumnID>ApproximateSize</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="3697465e-2a9e-4001-9ca8-9fc195cd2986">
+          <ID>Checked Insect Line</ID>
+          <Name>Checked Insect Line</Name>
+          <Source dwd:design-time-name="de682dbd-fab9-48ab-bff2-6d10b64fde2f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b4196c1e-014d-4cf2-954a-03f41d7a70cb">
+              <TableID>dbo_Facts</TableID>
+              <ColumnID>CheckedInsectLine</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="91fe4908-b448-4bc2-8cff-490484746392">
+          <ID>Facts Count</ID>
+          <Name>Facts Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="6aec37d9-4a64-478e-99c3-8323739671be">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="29bacdee-82d7-4947-8423-bb09cc84863c">
+              <TableID>dbo_Facts</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="63dc8142-3f27-425d-9627-6569b4c463f6">
+          <CubeDimensionID>Facts</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8a979e73-f2dd-4215-a975-a7e552275482">
+              <AttributeID>Time Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1a4a96d6-1359-414a-a0f6-7de01ef937cf">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c70e3019-b4bc-4a91-8e58-0ae5109fae91">
+                    <TableID>dbo_Facts</TableID>
+                    <ColumnID>TimeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="1addf597-c514-4756-9ed1-38967646e334">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="364f2527-5177-4d2a-93d7-5680d67bebfc">
+                    <TableID>dbo_Facts</TableID>
+                    <ColumnID>FarmerKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="c59d6609-8c70-4d0d-9ede-b3bb24b357af">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="04829a4a-d464-40a2-8df1-d38ad9117bf3">
+                    <TableID>dbo_Facts</TableID>
+                    <ColumnID>InsectKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="8c15c123-5ad1-439b-925a-2791e08e7182">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a7a7fd06-078d-48f2-b73d-c34aaf9ae5b3">
+                    <TableID>dbo_Facts</TableID>
+                    <ColumnID>TrapKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="75330a13-5952-49da-b51b-8e78357e71eb">
+          <CubeDimensionID>Insect</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8ffe1fc7-6d40-4f6e-b93c-e0ceff7fdb7c">
+              <AttributeID>Insect Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="711c6cc9-d981-4eab-8091-8bd85a1ef969">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="86203905-4bec-44f1-ba4d-131c11a15f2e">
+                    <TableID>dbo_Facts</TableID>
+                    <ColumnID>InsectKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6db9b2e8-cf21-4537-b570-54fc9776094e">
+          <CubeDimensionID>Trap</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cf111f3b-6cb9-480d-9a5a-d2b11ec3466a">
+              <AttributeID>Trap Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8fe06db6-d1d0-44a1-8d3b-1f55ddf29879">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9a92330d-ae32-44a2-9ed0-f960fc0de988">
+                    <TableID>dbo_Facts</TableID>
+                    <ColumnID>TrapKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8fc82cf2-e988-4b47-b010-e65002057139">
+          <CubeDimensionID>Farmer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fdb6956f-eb95-45e7-b35e-fbd45352a80a">
+              <AttributeID>Farmer Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="345236e9-c13c-4456-9569-d407b1bcbc81">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5f211d97-bca4-4a82-8ef3-93a8f4afc5f4">
+                    <TableID>dbo_Facts</TableID>
+                    <ColumnID>FarmerKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1d775eb5-5cdb-499c-9f67-fff484ee4f35">
+          <CubeDimensionID>Time</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="00c1204d-ba13-4657-b0cf-7820a1ca57a3">
+              <AttributeID>Time Key</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6aeca939-0b8a-4229-8db6-d4db7648a19b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="90a72129-727b-4c40-9a86-d02340a29ecd">
+                    <TableID>dbo_Facts</TableID>
+                    <ColumnID>TimeKey</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="86fc2fb7-29d8-4b27-9c08-c9a28289475b">
+    <DataSourceViewID>IS1308 Ray Nau DW</DataSourceViewID>
+  </Source>
+</Cube>
