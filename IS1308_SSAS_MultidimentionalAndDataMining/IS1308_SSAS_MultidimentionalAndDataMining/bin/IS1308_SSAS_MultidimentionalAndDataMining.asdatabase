@@ -541,7 +541,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2944" scrolltop="-5966" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12012" y="17092" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2944" scrolltop="-5966" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12012" y="10610" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -897,7 +897,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3269" scrolltop="-4207" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12012" y="17092" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3269" scrolltop="-4207" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="12012" y="10610" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -908,9 +908,9 @@
               <layoutmanager>
                 <ddsxmlobj />
               </layoutmanager>
-              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Time" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Time" left="-1753" top="-3440" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="8097" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
                 <control>
-                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000043110000" />
+                  <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000a11f0000" />
                 </control>
                 <layoutobject>
                   <ddsxmlobj>
@@ -944,11 +944,11 @@
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
-          <Value>20</Value>
+          <Value>-1753</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
-          <Value>0</Value>
+          <Value>-3440</Value>
         </Annotation>
         <Annotation>
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
@@ -1016,6 +1016,14 @@
             <AttributeRelationship>
               <AttributeID>Month Formated</AttributeID>
               <Name>Month Formated</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Lunnar Day Formated</AttributeID>
+              <Name>Lunnar Day Formated</Name>
+            </AttributeRelationship>
+            <AttributeRelationship>
+              <AttributeID>Lunar Month Formated</AttributeID>
+              <Name>Lunar Month Formated</Name>
             </AttributeRelationship>
           </AttributeRelationships>
           <OrderBy>Key</OrderBy>
@@ -1190,6 +1198,54 @@
           <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
           <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
         </Attribute>
+        <Attribute>
+          <ID>Lunnar Day Formated</ID>
+          <Name>Lunnar Day Formated</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>2</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Time</TableID>
+                <ColumnID>LunnarDayFormated</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ValueColumn>
+            <DataType>WChar</DataType>
+            <DataSize>2</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>LunnarDayFormated</ColumnID>
+            </Source>
+          </ValueColumn>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
+        <Attribute>
+          <ID>Lunar Month Formated</ID>
+          <Name>Lunar Month Formated</Name>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>2</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Time</TableID>
+                <ColumnID>LunarMonthFormated</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+          <ValueColumn>
+            <DataType>WChar</DataType>
+            <DataSize>2</DataSize>
+            <Source xsi:type="ColumnBinding">
+              <TableID>dbo_Time</TableID>
+              <ColumnID>LunarMonthFormated</ColumnID>
+            </Source>
+          </ValueColumn>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+          <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+        </Attribute>
       </Attributes>
       <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
     </Dimension>
@@ -1205,7 +1261,7 @@
           <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
           <Value>
             <dds xmlns="">
-              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6352" scrolltop="401" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="97" x="34925" y="17092" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6352" scrolltop="401" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="97" x="34925" y="10610" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                 <font>
                   <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                 </font>
@@ -1527,6 +1583,12 @@
             <Attribute>
               <AttributeID>Month Formated</AttributeID>
             </Attribute>
+            <Attribute>
+              <AttributeID>Lunnar Day Formated</AttributeID>
+            </Attribute>
+            <Attribute>
+              <AttributeID>Lunar Month Formated</AttributeID>
+            </Attribute>
           </Attributes>
         </Dimension>
       </Dimensions>
@@ -1780,7 +1842,7 @@
                 <Name>_ALL_TABLES_</Name>
                 <DiagramLayout>
                   <dds>
-                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6503" scrolltop="-4995" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="98" x="35454" y="18415" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                    <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="20" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-6503" scrolltop="-4995" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="98" x="35454" y="11933" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
                       <font>
                         <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
                       </font>
@@ -2049,6 +2111,20 @@
                           </xs:restriction>
                         </xs:simpleType>
                       </xs:element>
+                      <xs:element name="LunnarDayFormated" msdata:ReadOnly="true" msprop:design-time-name="4501ec6f-4cdf-4195-8680-4ef91bc74866" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="LunnarDayFormated" msprop:ComputedColumnExpression="RIGHT('0' + CAST(LunarDay AS VARCHAR), 2)" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="2" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="LunarMonthFormated" msdata:ReadOnly="true" msprop:design-time-name="57efbeed-ccf3-42be-81ed-59ad496c4a33" msprop:IsLogical="True" msprop:Description="" msprop:DbColumnName="LunarMonthFormated" msprop:ComputedColumnExpression="RIGHT('0' + CAST(LunarMonth AS VARCHAR), 2)" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="2" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
                     </xs:sequence>
                   </xs:complexType>
                 </xs:element>
@@ -2092,21 +2168,21 @@
               <xs:selector xpath=".//dbo_Trap" />
               <xs:field xpath="TrapKey" />
             </xs:unique>
-            <xs:keyref name="FK_Facts_Farmer1" refer="dbo_Farmer_Constraint1">
+            <xs:keyref name="FK_Facts_Insect1" refer="dbo_Insect_Constraint1">
               <xs:selector xpath=".//dbo_Facts" />
-              <xs:field xpath="FarmerKey" />
-            </xs:keyref>
-            <xs:keyref name="FK_Facts_Trap1" refer="dbo_Trap_Constraint1">
-              <xs:selector xpath=".//dbo_Facts" />
-              <xs:field xpath="TrapKey" />
+              <xs:field xpath="InsectKey" />
             </xs:keyref>
             <xs:keyref name="FK_Facts_Time1" refer="dbo_Time_Constraint1">
               <xs:selector xpath=".//dbo_Facts" />
               <xs:field xpath="TimeKey" />
             </xs:keyref>
-            <xs:keyref name="FK_Facts_Insect1" refer="dbo_Insect_Constraint1">
+            <xs:keyref name="FK_Facts_Trap1" refer="dbo_Trap_Constraint1">
               <xs:selector xpath=".//dbo_Facts" />
-              <xs:field xpath="InsectKey" />
+              <xs:field xpath="TrapKey" />
+            </xs:keyref>
+            <xs:keyref name="FK_Facts_Farmer1" refer="dbo_Farmer_Constraint1">
+              <xs:selector xpath=".//dbo_Facts" />
+              <xs:field xpath="FarmerKey" />
             </xs:keyref>
           </xs:element>
         </xs:schema>
